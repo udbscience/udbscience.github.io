@@ -81,6 +81,8 @@
     <option value="UNP">UNP — Union Pacific</option>
     <option value="WMT">WMT — Walmart</option>
   </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
 </div>
   <section class="card" data-company="upcoming">
     <h2>Upcoming in the next week</h2>
@@ -179,13 +181,19 @@
 <script>
   (function () {
     var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
     var cards = document.querySelectorAll("section.card");
-    select.addEventListener("change", function () {
+    function apply() {
       var value = select.value;
+      var q = (search.value || "").toLowerCase();
       cards.forEach(function (card) {
-        card.style.display = (value === "all" || card.getAttribute("data-company") === value) ? "" : "none";
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
       });
-    });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
   })();
 </script>
 </body>
