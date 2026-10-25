@@ -8,43 +8,41 @@
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
-  .home{margin:0 0 12px}
-  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
   .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
   header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
   h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
   .meta{color:#6b7280;font-size:15px;margin:0}
-  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-  .filter label{display:block;font-weight:700;margin-bottom:8px}
-  .filter select{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e}
-  .note{background:#eef4ff;border:1px solid #dbe7ff;border-radius:16px;padding:16px;margin-bottom:16px;font-size:15.5px}
-  .note strong{color:#0b3d91}
-  section.card{background:#fff;border-radius:16px;padding:18px 18px 6px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
   h2{font-size:20px;line-height:1.3;margin:0 0 10px}
   ul{margin:6px 0 12px;padding-left:22px}
-  li{margin:14px 0}
-  li::marker{color:#0e7a5f;font-weight:700}
+  li{margin:10px 0}
   .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
   .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
   a{color:#0b5cab;font-weight:600;text-decoration:none}
   section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
-  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
   footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
   @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
-  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px 16px 4px} h1{font-size:26px} h2{font-size:19px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
   @media (prefers-color-scheme:dark){
     body{background:#000;color:#f2f2f7}
-    header,section.card{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
-    .meta,.none,footer{color:#9ca3af}
+    header,section.card,a.card,.filter{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
     .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
-    .filter{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
-    .filter select{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
-    .note{background:#12233f;border-color:#1e3a5f}
-    .note strong{color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
     .date{background:#14331f;color:#a7f3c8}
     .why{color:#b0b3b8}
     a{color:#7fb3ff}
     section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
   }
 </style>
 </head>
@@ -53,7 +51,7 @@
   <p class="home"><a href="index.html">&larr; Back to home</a></p>
   <header>
     <h1>Company News — Valuation &amp; Future Prospects</h1>
-    <p class="meta">Last updated: Saturday, October 24, 2026 (test run, list updated) &middot; News list: 17 companies &middot; Window: October 17&ndash;24, 2026</p>
+    <p class="meta">Last updated: Sunday, October 25, 2026 (manual run) &middot; News list: 17 companies &middot; Window: October 18&ndash;25, 2026</p>
   </header>
   <div class="note">
     <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
@@ -94,13 +92,13 @@
   <section class="card" data-company="AAPL">
     <h2>AAPL — Apple</h2>
     <ul>
-    <li><span class="date">2026-10-23</span> — Apple launched the iPhone Duo, with online preorders selling out within minutes and only limited quantities for walk-in customers. <span class="why">Why it matters: early sell-out demand is a positive read on the new product cycle, a key driver of iPhone revenue.</span> <a href="https://www.tradingview.com/news/stocktwits:e264c0fb6094b:0-apple-faces-slightly-challenging-earnings-setup-near-record-highs-morgan-stanley-says-sees-limited-upside-potential/">TradingView / Stocktwits</a></li>
+    <li><span class="date">2026-10-23</span> — Apple launched its first foldable iPhone, the iPhone Duo, on October 23, 2026, with only limited quantities available for walk-in customers after online pre-orders sold out within minutes. <span class="why">Why it matters: tight launch supply versus strong early demand is an early read on a new premium product cycle and near-term iPhone revenue/margin</span> <a href="https://www.tradingview.com/news/stocktwits:e264c0fb6094b:0-apple-faces-slightly-challenging-earnings-setup-near-record-highs-morgan-stanley-says-sees-limited-upside-potential/">TradingView News (Stocktwits)</a></li>
   </ul>
   </section>
   <section class="card" data-company="AMZN">
     <h2>AMZN — Amazon</h2>
     <ul>
-    <li><span class="date">2026-10-23</span> — CEO Andy Jassy said in an interview that AWS has sold out its 2026 capacity and is largely sold out for 2027, with a good chunk of 2028 also sold, while noting about $220B of 2026 capex and unmet demand. <span class="why">Why it matters: AI/cloud demand is outrunning supply, supporting AWS growth but also a heavy capex burden.</span> <a href="https://www.tokenpost.com/news/business/39494">TokenPost</a></li>
+    <li><span class="date">2026-10-23</span> — Amazon CEO Andy Jassy said on the a16z Show, released October 23, 2026, that AWS capacity is sold out for 2026, largely sold out for 2027, and a good chunk of 2028 is also sold out, while AWS still holds back some capacity for on-demand EC2 and Bedrock use. <span class="why">Why it matters: committed capacity supports AWS growth visibility but also confirms data-center/power/memory constraints behind Amazon&#x27;s ~$220 billion 2026 capex plan</span> <a href="https://dealroom.co/news/165605-andy-jassy-aws-capacity-is-sold-out-for-2026-largely-sold-out-for-2027-a/">Dealroom News</a></li>
   </ul>
   </section>
   <section class="card" data-company="ASML">
@@ -109,11 +107,13 @@
   </section>
   <section class="card" data-company="AWK">
     <h2>AWK — American Water Works</h2>
-    <p class="none">Added October 24, 2026. First full coverage in the Monday, October 26, 2026 run — not researched in this October 24 test run.</p>
+    <p class="none">No important valuation-relevant news found in the window.</p>
   </section>
   <section class="card" data-company="BR">
     <h2>BR — Broadridge</h2>
-    <p class="none">No important valuation-relevant news found in the window.</p>
+    <ul>
+    <li><span class="date">2026-10-22</span> — Broadridge published its 2026 ProxyPulse report, finding average shareholder-proposal support rose to 27.9% from 24.3% in 2025, say-on-pay support hit a 10-year high, and pass-through voting expanded to more than 900 funds from about 400 a year earlier. <span class="why">Why it matters: it evidences expanding adoption of Broadridge&#x27;s governance/voting-choice capabilities, a core part of its governance franchise</span> <a href="https://www.morningstar.com/news/pr-newswire/20261022ny77857/shareholder-proposal-support-nudges-up-as-proposal-volume-falls-broadridge-proxypulse-report-finds">Morningstar / PR Newswire</a></li>
+  </ul>
   </section>
   <section class="card" data-company="BRK-A">
     <h2>BRK-A — Berkshire Hathaway</h2>
@@ -130,14 +130,13 @@
   <section class="card" data-company="FNMA">
     <h2>FNMA — Fannie Mae</h2>
     <ul>
-    <li><span class="date">2026-10-19</span> — FHFA Director Bill Pulte said the agency is considering ending the tri-merge credit report requirement for loans Fannie Mae and Freddie Mac acquire (one or two reports instead of three), and said a decision on loan-level price adjustments is expected before year-end. <span class="why">Why it matters: both changes could alter borrower costs, loan volumes, and Fannie Mae's guarantee-fee economics.</span> <a href="https://bankingjournal.aba.com/2026/10/fhfa-exploring-ending-tri-merge-credit-report-requirement-for-fannie-mae-freddie-mac/">ABA Banking Journal</a></li>
-    <li><span class="date">2026-10-20</span> — Treasury Secretary Scott Bessent said a Fannie Mae/Freddie Mac conservatorship exit is not imminent and will be addressed eventually. <span class="why">Why it matters: it pushes out the privatization timeline that is central to the common-equity thesis.</span> <a href="https://themortgagepoint.com/2026/10/20/bessent-status-of-fannie-freddie-will-be-addressed-eventually/">The Mortgage Point</a></li>
+    <li><span class="date">2026-10-20</span> — Treasury Secretary Scott Bessent said in an Oct. 20 interview that the administration could address Fannie Mae and Freddie Mac&#x27;s ownership structure in 2027 or 2028, while prioritizing not widening mortgage spreads. <span class="why">Why it matters: conservatorship-exit timing and mortgage-spread policy directly affect Fannie Mae&#x27;s capital structure and the value of its equity</span> <a href="https://wrenews.com/bessent-fannie-freddie-ownership-review-2027-2028/">WRE News</a></li>
   </ul>
   </section>
   <section class="card" data-company="GEV">
     <h2>GEV — GE Vernova</h2>
     <ul>
-    <li><span class="date">2026-10-20</span> — GE Vernova received an order from Songon Energies S.A. to supply a 9E gas turbine and generator for a 372-MW combined-cycle plant near Abidjan, Côte d'Ivoire, expected to begin operations in 2029. <span class="why">Why it matters: it adds to the gas-power order book that underpins the power-equipment growth case.</span> <a href="https://www.foreignpolicyjournal.com/2026/10/23/ge-vernova-nyse-gev-constellation-energy-nasdaq-ceg-and-montauk-renewables-nasdaq-mntk-stand-out-as-alternative-energy-sector-faces-mixed-signals/">Foreign Policy Journal</a></li>
+    <li><span class="date">2026-10-20</span> — GE Vernova secured an order from Songon Energies S.A. to supply a 9E gas turbine and generator for the 372-MW Songon combined-cycle power plant near Abidjan, Côte d&#x27;Ivoire, scheduled to enter operation in 2029, with potential additional substation, software, and long-term service work. <span class="why">Why it matters: it adds to Gas Power backlog and opens recurring service revenue, supporting the order-momentum case</span> <a href="https://www.modernpowersystems.com/news/ge-vernova-9e-turbine-selected-for-songon-combined-cycle-plant/">Modern Power Systems</a></li>
   </ul>
   </section>
   <section class="card" data-company="GOOGL">
@@ -146,11 +145,13 @@
   </section>
   <section class="card" data-company="ITOCY">
     <h2>ITOCY — Itochu</h2>
-    <p class="none">Added October 24, 2026 (user clarified "itocy" as Itochu). First full coverage in the Monday, October 26, 2026 run — not researched in this October 24 test run.</p>
+    <p class="none">No important valuation-relevant news found in the window.</p>
   </section>
   <section class="card" data-company="JNJ">
     <h2>JNJ — Johnson &amp; Johnson</h2>
-    <p class="none">No important valuation-relevant news found in the window.</p>
+    <ul>
+    <li><span class="date">2026-10-19</span> — Johnson &amp; Johnson reported one-year results from the Phase 3 FUZION study showing TREMFYA (guselkumab) maintained or improved fistula remission through 48 weeks in adults with Crohn&#x27;s disease. <span class="why">Why it matters: positive long-term immunology data supports the durability and label-expansion prospects of a key growth product</span> <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-new-data-showing-tremfya-guselkumab-is-the-only-il-23-to-deliver-durable-fistula-remission-through-48-weeks-in-crohns-disease-with-perianal-fistula">Johnson &amp; Johnson</a></li>
+  </ul>
   </section>
   <section class="card" data-company="MP">
     <h2>MP — MP Materials</h2>
@@ -159,23 +160,24 @@
   <section class="card" data-company="NFLX">
     <h2>NFLX — Netflix</h2>
     <ul>
-    <li><span class="date">2026-10-20</span> — Q3 2026 revenue $12.874B, up 11.9%, EPS $0.87 vs $0.82 consensus, operating margin 34.6%, free cash flow $2.884B. <span class="why">Why it matters: confirms continued profitable growth, though at a decelerating rate.</span> <a href="https://www.stockspro24.com/blog/netflix-q3-2026-earnings-recap.html">StocksPro24</a></li>
-    <li><span class="date">2026-10-20/21</span> — Guided Q4 2026 revenue to $13.442B and EPS to $0.67 vs $0.73 consensus, set full-year 2026 revenue at $51.1B (the low end of the prior range), and cut its 2026 advertising forecast from ~$3.0B to ~$2.7B on a slower ad-product rollout. <span class="why">Why it matters: weaker near-term guidance and a slower ad ramp temper the growth story behind the valuation.</span> <a href="https://www.marketbeat.com/instant-alerts/guidance-netflix-nasdaq-nflx-announces-q4-2026-earnings-guidance-2026-10-21/">MarketBeat</a></li>
+    <li><span class="date">2026-10-20</span> — Netflix reported Q3 2026 revenue of $12.87 billion, up 11.9% year over year, and EPS of $0.87, beating the $0.82 consensus. <span class="why">Why it matters: it confirms continued revenue growth and margin strength, while setting up the guidance debate below</span> <a href="https://www.marketbeat.com/instant-alerts/guidance-netflix-nasdaq-nflx-announces-q4-2026-earnings-guidance-2026-10-21/">MarketBeat</a></li>
+    <li><span class="date">2026-10-21</span> — Netflix cut its full-year 2026 advertising revenue outlook to about $2.7 billion from about $3 billion, citing slower-than-expected rollout of ad-product capabilities, and guided Q4 revenue to $13.4 billion, below the $13.5 billion consensus. <span class="why">Why it matters: advertising is a central growth lever, so a lowered ad outlook tempers the near-term monetization trajectory despite Q3 strength</span> <a href="https://www.fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-netflix-cuts-ad-revenue-guidance-stock-slides-5/">Motley Fool</a></li>
   </ul>
   </section>
   <section class="card" data-company="UNP">
     <h2>UNP — Union Pacific</h2>
     <ul>
-    <li><span class="date">2026-10-22</span> — Record Q3 2026 results: revenue $7.20B, up 15%, adjusted EPS $3.53, up 15%, net income ~$2.1B, volume +6%. <span class="why">Why it matters: confirms pricing and volume strength at the core railroad.</span> <a href="https://www.tickerreport.com/banking-finance/13630957/union-pacific-nyseunp-announces-earnings-results.html">TickerReport</a></li>
-    <li><span class="date">2026-10-22</span> — On the Q3 call, Union Pacific updated its capex plan to $3.5B, disclosed CFO Jennifer Hamann will retire in early 2027, and discussed the continued Surface Transportation Board review of the proposed $85B Norfolk Southern merger. <span class="why">Why it matters: leadership transition plus the merger review are the two biggest swing factors for the railroad's future structure.</span> <a href="https://www.fool.com/earnings/call-transcripts/2026/10/22/union-pacific-unp-q3-2026-earnings-call-transcript/">Motley Fool transcript</a></li>
+    <li><span class="date">2026-10-22</span> — Union Pacific reported Q3 2026 profit of $2.08 billion ($3.49 per share; $3.53 adjusted, vs. $3.47 expected), on revenue up 15% to $7.2 billion, driven by 6% volume growth and core pricing gains, and reaffirmed high-single-digit full-year EPS growth. <span class="why">Why it matters: volume-plus-pricing growth and a maintained outlook bear directly on standalone earnings power ahead of the proposed Norfolk Southern merger</span> <a href="https://www.morningstar.com/news/dow-jones/202610226356/union-pacific-posts-higher-3q-profit-revenue-on-volume-growth">Morningstar / Dow Jones</a></li>
   </ul>
   </section>
   <section class="card" data-company="WMT">
     <h2>WMT — Walmart</h2>
-    <p class="none">No important valuation-relevant news found in the window.</p>
+    <ul>
+    <li><span class="date">2026-10-21</span> — Walmart announced an Agent Gateway and Agent Profiles allowing vetted AI agents to shop Walmart and Sam&#x27;s Club on customers&#x27; behalf, with customer-set spending limits or per-purchase approval and prices matching those shown to humans. <span class="why">Why it matters: it positions Walmart&#x27;s e-commerce platform for agent-led shopping, a potential new channel for online sales and membership engagement</span> <a href="https://www.pymnts.com/news/retail/2026/walmart-opens-doors-for-ai-agents-that-obey-strict-rules/">PYMNTS</a></li>
+  </ul>
   </section>
   <footer>
-    Source window: October 17&ndash;24, 2026. Items dated before October 17 were excluded, even where they were a company's dominant recent event. One reported GEV capacity-plan item was dropped before publishing because its exact source article could not be verified. This file is replaced in full every weekday run of the morning feed.
+    Source window: October 18&ndash;25, 2026. This file is replaced in full every run of the daily feed.
   </footer>
 </div>
 <script>
