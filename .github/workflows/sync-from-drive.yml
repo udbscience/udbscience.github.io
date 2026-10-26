@@ -1,0 +1,62 @@
+name: Sync Pages site from Drive
+
+on:
+  schedule:
+    # Morning ET window, in UTC: covers 7:00-9:00 AM EDT (11:00-13:00 UTC)
+    # and 7:00-9:00 AM EST (12:00-14:00 UTC). Runs every 20 minutes.
+    - cron: '*/20 11-13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Download site zip from Drive
+        run: |
+          set -e
+          curl -L -o /tmp/pages-sync.zip "https://drive.google.com/uc?export=download&id=1c6_wPvcBBeWdMHo50Qf_u0dJreVsENDP"
+          ls -l /tmp/pages-sync.zip
+          unzip -t /tmp/pages-sync.zip > /dev/null
+
+      - name: Apply zip if newer than last sync
+        id: apply
+        run: |
+          set -e
+          mkdir -p /tmp/site
+          unzip -o -q /tmp/pages-sync.zip -d /tmp/site
+          NEW_TS="$(cat /tmp/site/sync.json 2>/dev/null | python3 -c 'import json,sys; print(json.load(sys.stdin).get("generated_at",""))' || true)"
+          OLD_TS=""
+          if [ -f .drive-sync-marker ]; then OLD_TS="$(cat .drive-sync-marker)"; fi
+          echo "new=$NEW_TS old=$OLD_TS"
+          if [ -n "$NEW_TS" ] && [ -n "$OLD_TS" ] && [ "$NEW_TS" \<= "$OLD_TS" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Zip is not newer than last sync; skipping."
+            exit 0
+          fi
+          # Copy site files into the repo, preserving .github (the workflow itself)
+          # and .git. sync.json is kept out of the published site.
+          rm -f /tmp/site/sync.json
+          cp -r /tmp/site/. .
+          if [ -n "$NEW_TS" ]; then printf '%s' "$NEW_TS" > .drive-sync-marker; fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push if changed
+        if: steps.apply.outputs.skip != 'true'
+        run: |
+          set -e
+          git config user.name "pages-sync"
+          git config user.email "pages-sync@users.noreply.github.com"
+          git add -A -- ':!.github'
+          git add .drive-sync-marker || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync Pages site from Drive"
+            git push
+          fi
