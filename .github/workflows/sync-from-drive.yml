@@ -34,7 +34,7 @@ jobs:
           OLD_TS=""
           if [ -f .drive-sync-marker ]; then OLD_TS="$(cat .drive-sync-marker)"; fi
           echo "new=$NEW_TS old=$OLD_TS"
-            if [ -n "$NEW_TS" ] && [ -n "$OLD_TS" ] && [[ "$NEW_TS" <= "$OLD_TS" ]]; then
+          if [ -n "$NEW_TS" ] && [ -n "$OLD_TS" ] && ! [ "$NEW_TS" \> "$OLD_TS" ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "Zip is not newer than last sync; skipping."
             exit 0
