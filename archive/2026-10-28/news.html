@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company News — Valuation &amp; Future Prospects</title>
+<style>  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+  header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+  .meta{color:#6b7280;font-size:15px;margin:0}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h2{font-size:20px;line-height:1.3;margin:0 0 10px}
+  ul{margin:6px 0 12px;padding-left:22px}
+  li{margin:10px 0}
+  .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  a{color:#0b5cab;font-weight:600;text-decoration:none}
+  section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
+  .note{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
+  @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
+  @media (prefers-color-scheme:dark){
+    body{background:#000;color:#f2f2f7}
+    header,section.card,a.card,.filter,.note{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
+    .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
+    .date{background:#14331f;color:#a7f3c8}
+    .why{color:#b0b3b8}
+    a{color:#7fb3ff}
+    section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="home"><a href="../../index.html">&larr; Back to home</a></p>
+  <header>
+    <h1>Company News — Valuation &amp; Future Prospects</h1>
+    <p class="meta">Last updated: Wednesday, October 28, 2026, 7:00 AM ET &middot; News list: 17 companies &middot; Window: October 21&ndash;28, 2026</p>
+  </header>
+  <div class="note">
+    <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
+  </div>
+<div class="filter">
+  <label for="companyFilter">Choose a company</label>
+  <select id="companyFilter" aria-label="Choose a company">
+    <option value="all">All companies</option>
+    <option value="upcoming">Upcoming in the next week</option>
+    <option value="AAPL">AAPL — Apple</option>
+    <option value="AMZN">AMZN — Amazon</option>
+    <option value="ASML">ASML — ASML Holding</option>
+    <option value="AWK">AWK — American Water Works</option>
+    <option value="BR">BR — Broadridge</option>
+    <option value="BRK-A">BRK-A — Berkshire Hathaway</option>
+    <option value="FCX">FCX — Freeport-McMoRan</option>
+    <option value="FISV">FISV — Fiserv</option>
+    <option value="FNMA">FNMA — Fannie Mae</option>
+    <option value="GEV">GEV — GE Vernova</option>
+    <option value="GOOGL">GOOGL — Alphabet</option>
+    <option value="ITOCY">ITOCY — Itochu</option>
+    <option value="JNJ">JNJ — Johnson &amp; Johnson</option>
+    <option value="MP">MP — MP Materials</option>
+    <option value="NFLX">NFLX — Netflix</option>
+    <option value="UNP">UNP — Union Pacific</option>
+    <option value="WMT">WMT — Walmart</option>
+  </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
+</div>
+  <section class="card" data-company="upcoming">
+    <h2>Upcoming in the next week</h2>
+    <ul>
+    <li><span class="date">Wed, Oct 28, 2026</span> — GOOGL reports Q3 2026 earnings after the close, call 4:30 p.m. ET. <a href="https://www.themarketsdaily.com/2026/10/27/alphabet-googl-expected-to-announce-quarterly-earnings-on-wednesday.html">Markets Daily</a></li>
+    <li><span class="date">Wed, Oct 28, 2026</span> — AWK reports Q3 2026 earnings after the close. <a href="https://www.marketbeat.com/instant-alerts/upcoming-american-water-works-awk-expected-to-announce-quarterly-earnings-on-wednesday-2026-10-21/">MarketBeat</a></li>
+    <li><span class="date">Thu, Oct 29, 2026</span> — Amazon reports Q3 results, with a results call at 5 p.m. ET. <a href="https://www.tokenpost.com/news/business/39494">TokenPost</a></li>
+    <li><span class="date">Mon, Nov 2, 2026</span> — AAPL reports quarterly results (fiscal Q4). <a href="earnings.html">Earnings calendar (prior run)</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AAPL">
+    <h2>AAPL — Apple</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Apple said a small number of iPhone Duo units have an inner-display issue and told affected customers to contact AppleCare for a replacement, after early buyers reported cracks and bright lines along the hinge; Apple has not published a failure rate or a confirmed cause. <span class="why">Why it matters: a durability question at the launch of a flagship product could mean warranty costs and reputational risk, though Apple describes the affected number as small</span> <a href="https://www.tradingview.com/news/gurufocus:f2df68406094b:0-apple-acknowledges-iphone-duo-screen-failures/">TradingView News</a></li>
+    <li><span class="date">2026-10-27</span> — Apple released iOS 27.2, adding Siri AI conversation memory and five new languages (French, Japanese, Korean, Portuguese and Spanish), plus Apple Pencil support for the iPhone Duo. <span class="why">Why it matters: on-device AI capability and Duo software support bear on iPhone differentiation and services/AI monetisation, though Apple has not disclosed pricing for expanded server-side AI features</span> <a href="https://www.latestly.com/technology/ios-27-2-rolls-out-siri-ai-gets-new-languages-iphone-duo-gains-pencil-support-7658356.html">LatestLY</a></li>
+    <li><span class="date">2026-10-26</span> — Demand for the ~$2,000 iPhone Duo appears stronger than expected, with wait times extending as long as 79 days, and Apple has reportedly asked suppliers to increase production by 30%; Apple also introduced a redesigned iPad mini with an OLED display and A20 Pro chip, starting at $699, ahead of a November 6 launch. <span class="why">Why it matters: strong early demand for a new premium product cycle plus a refreshed iPad line bears on near-term hardware revenue, while the production ramp tests supply execution</span> <a href="https://www.thecerbatgem.com/2026/10/26/apple-nasdaqaapl-shares-down-1-1-time-to-sell.html">The Cerbat Gem</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AMZN">
+    <h2>AMZN — Amazon</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — Amazon CEO Andy Jassy said on the a16z Show, released October 23, 2026, that AWS capacity is sold out for 2026, largely sold out for 2027, and a good chunk of 2028 is also sold out, while AWS still holds back some capacity for on-demand EC2 and Bedrock use. <span class="why">Why it matters: committed capacity supports AWS growth visibility but also confirms data-center/power/memory constraints behind Amazon&#x27;s ~$220 billion 2026 capex plan</span> <a href="https://dealroom.co/news/165605-andy-jassy-aws-capacity-is-sold-out-for-2026-largely-sold-out-for-2027-a/">Dealroom News</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="ASML">
+    <h2>ASML — ASML Holding</h2>
+    <ul>
+    <li><span class="date">2026-10-26</span> — Viettel&#x27;s contract for ASML DUV lithography tools remains unsigned, putting Vietnam&#x27;s 2027 pilot fab target at risk, according to the report. <span class="why">Why it matters: a stalled order in a new market is a small demand signal, but on its own it does not change the capacity-constrained order-book story</span> <a href="https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/asml-s-vietnam-order-stalls-as-ing-flags-a-dutch-economy-leaning-too-hard/70416543">ad-hoc-news</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AWK">
+    <h2>AWK — American Water Works</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="BR">
+    <h2>BR — Broadridge</h2>
+    <ul>
+    <li><span class="date">2026-10-22</span> — Broadridge published its 2026 ProxyPulse report, finding average shareholder-proposal support rose to 27.9% from 24.3% in 2025, say-on-pay support hit a 10-year high, and pass-through voting expanded to more than 900 funds from about 400 a year earlier. <span class="why">Why it matters: it evidences expanding adoption of Broadridge&#x27;s governance/voting-choice capabilities, a core part of its governance franchise</span> <a href="https://www.morningstar.com/news/pr-newswire/20261022ny77857/shareholder-proposal-support-nudges-up-as-proposal-volume-falls-broadridge-proxypulse-report-finds">Morningstar / PR Newswire</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="BRK-A">
+    <h2>BRK-A — Berkshire Hathaway</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FCX">
+    <h2>FCX — Freeport-McMoRan</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Freeport-McMoRan reported Q3 2026 adjusted EPS of $0.88, up 76% year over year and beating the ~$0.80 consensus, on revenue of $7.55 billion (+8.2%); the average realized copper price rose 39.7% to $6.54 per pound even as copper sales fell 23.3% amid the Grasberg ramp-up. <span class="why">Why it matters: pricing more than offset lower volumes this quarter, while the Grasberg recovery pace remains the key volume driver for 2027-2028</span> <a href="https://www.zacks.com/stock/news/3016354/fcx-q3-earnings-beat-estimates-on-strong-copper-pricing">Zacks</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FISV">
+    <h2>FISV — Fiserv</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — Fiserv appointed Raj Seshadri, senior strategic advisor to Mastercard&#x27;s CEO, to its board effective Nov. 30, 2026, and said director Henrique De Castro will not seek reelection at the next annual meeting. <span class="why">Why it matters: a board refresh at a payments company in transition adds senior payments leadership experience and marks a governance change</span> <a href="https://www.pymnts.com/personnel/2026/fiserv-appoints-mastercard-senior-strategic-advisor-raj-seshadri-to-board/">PYMNTS</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FNMA">
+    <h2>FNMA — Fannie Mae</h2>
+    <ul>
+    <li><span class="date">2026-10-22</span> — President Trump signed an executive order on Oct. 22, 2026 directing FHFA to establish a pilot for proactive mortgage-insurance cancellation on new Fannie Mae and Freddie Mac loans, and to cut refinancing costs, including expanding the title-insurance waiver pilot, waiving appraisals on certain rate-and-term refinances, and reducing or eliminating loan-level price adjustments on such refinances. <span class="why">Why it matters: GSE fee and process changes would directly affect guarantee economics, borrower costs, and refinance volumes</span> <a href="https://newslink.mba.org/mba-newslinks/2026/october/mba-advocacy-update-president-trump-issues-housing-eo-fannie-mae-updates-requirements-nmls-renewal-begins-nov-1-register-for-nov-10-mba-town-hall/">MBA Newslink</a></li>
+    <li><span class="date">2026-10-22</span> — Pershing Square CEO Bill Ackman urged the administration to target 2027 for ending Fannie Mae and Freddie Mac&#x27;s conservatorships; this was advocacy, not a policy decision. <span class="why">Why it matters: conservatorship-exit timing is the central structural question for FNMA common shareholders, and high-profile advocacy can move the policy debate</span> <a href="https://www.tokenpost.com/news/investing/38775">TokenPost</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GEV">
+    <h2>GEV — GE Vernova</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — GE Vernova reported Q3 2026 EPS of $4.81, beating the $4.03 consensus, on revenue of $12.64 billion versus $11.99 billion expected; orders were $29.3 billion (+96% organically), backlog reached $197 billion, and the company raised 2026 guidance and doubled its share-repurchase authorization to $20 billion. <span class="why">Why it matters: order and backlog momentum plus a guidance raise and larger buyback authorization bear directly on the growth and cash-return case, ahead of the 7:30 AM ET earnings call</span> <a href="https://www.marketbeat.com/earnings/reports/2026-10-28-ge-vernova-stock/">MarketBeat</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GOOGL">
+    <h2>GOOGL — Alphabet</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="ITOCY">
+    <h2>ITOCY — Itochu</h2>
+    <ul>
+    <li><span class="date">2026-10-22</span> — Itochu agreed to acquire a 51% stake in Taiwanese construction-equipment dealer Yungtay-Hitachi Construction Machinery. <span class="why">Why it matters: it adds a majority-owned industrial platform and broadens Itochu&#x27;s machinery exposure in Taiwan</span> <a href="https://www.ad-hoc-news.de/boerse/corporate-news/itochu-agrees-to-acquire-51-percent-dealer-stake-itochu-stock-is-valued/70412995">ad-hoc-news / MarketScreener</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="JNJ">
+    <h2>JNJ — Johnson &amp; Johnson</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — An Ohio state court jury found in Johnson &amp; Johnson&#x27;s favor on Oct. 23 in a talc mesothelioma wrongful-death lawsuit, a defense verdict in the ongoing individual talc litigation. <span class="why">Why it matters: talc litigation is a long-running overhang, so defense verdicts reduce — though do not end — that liability uncertainty</span> <a href="https://atumio.com/news/jj-wins-ohio-talc-mesothelioma-trial-2026/">Atumio / Law360</a></li>
+    <li><span class="date">2026-10-26</span> — Johnson &amp; Johnson reported that ERLEADA (apalutamide) given before and after surgery cut the risk of recurrence or death by 62% versus surgery alone in high-risk prostate cancer patients. <span class="why">Why it matters: positive perioperative oncology data supports the label-expansion prospects of an established prostate cancer drug</span> <a href="https://insiderpost.org/jnj-johnson-johnson-reports-new-erleada-data-2026-10-26.html">Johnson &amp; Johnson / InsiderPost</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="MP">
+    <h2>MP — MP Materials</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="NFLX">
+    <h2>NFLX — Netflix</h2>
+    <ul>
+    <li><span class="date">2026-10-21</span> — Netflix cut its full-year 2026 advertising revenue outlook to about $2.7 billion from about $3 billion, citing slower-than-expected rollout of ad-product capabilities, and guided Q4 revenue to $13.4 billion, below the $13.5 billion consensus. <span class="why">Why it matters: advertising is a central growth lever, so a lowered ad outlook tempers the near-term monetization trajectory despite Q3 strength</span> <a href="https://www.fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-netflix-cuts-ad-revenue-guidance-stock-slides-5/">Motley Fool</a></li>
+    <li><span class="date">2026-10-26</span> — Peter Rice began as Netflix&#x27;s chief content officer on Oct. 26, 2026, succeeding Bela Bajaria, with a global remit across scripted and unscripted series, films, and live events. <span class="why">Why it matters: the content chief sets programming strategy for Netflix&#x27;s largest cost line and a key driver of subscriber retention</span> <a href="https://hollywoodweeklymagazine.com/peter-rice-netflix-chief-content-officer/">Hollywood Weekly</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="UNP">
+    <h2>UNP — Union Pacific</h2>
+    <ul>
+    <li><span class="date">2026-10-21</span> — Several agricultural groups, including the National Farmers Union, Farm Bureau, National Grain and Feed Association and The Fertilizer Institute, publicly opposed the proposed Union Pacific–Norfolk Southern merger, arguing it would concentrate about 50% of U.S. rail traffic in one company. <span class="why">Why it matters: shipper opposition is a direct regulatory risk to the merger&#x27;s approval and terms</span> <a href="https://www.rfdtv.com/ag-groups-push-back-on-union-pacific-norfolk-southern-merger">RFD-TV</a></li>
+    <li><span class="date">2026-10-22</span> — Union Pacific reported Q3 2026 profit of $2.08 billion ($3.49 per share; $3.53 adjusted, vs. $3.47 expected), on revenue up 15% to $7.2 billion, driven by 6% volume growth and core pricing gains, and reaffirmed high-single-digit full-year EPS growth. <span class="why">Why it matters: volume-plus-pricing growth and a maintained outlook bear directly on standalone earnings power ahead of the proposed Norfolk Southern merger</span> <a href="https://www.morningstar.com/news/dow-jones/202610226356/union-pacific-posts-higher-3q-profit-revenue-on-volume-growth">Morningstar / Dow Jones</a></li>
+    <li><span class="date">2026-10-27</span> — Associated Industries of Florida told the U.S. rail regulator it opposes the proposed Union Pacific–Norfolk Southern merger, citing concerns about effects on Florida&#x27;s freight network and rail-served industries. <span class="why">Why it matters: further state-level shipper opposition adds to the regulatory record the Surface Transportation Board must weigh</span> <a href="https://www.mlex.com/mlex/mergers-acquisitions/articles/2542915/associated-industries-of-florida-opposes-union-pacific-norfolk-southern-merger">MLex</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="WMT">
+    <h2>WMT — Walmart</h2>
+    <ul>
+    <li><span class="date">2026-10-21</span> — Walmart announced an Agent Gateway and Agent Profiles allowing vetted AI agents to shop Walmart and Sam&#x27;s Club on customers&#x27; behalf, with customer-set spending limits or per-purchase approval and prices matching those shown to humans. <span class="why">Why it matters: it positions Walmart&#x27;s e-commerce platform for agent-led shopping, a potential new channel for online sales and membership engagement</span> <a href="https://www.pymnts.com/news/retail/2026/walmart-opens-doors-for-ai-agents-that-obey-strict-rules/">PYMNTS</a></li>
+    <li><span class="date">2026-10-26</span> — Walmart announced three holiday shopping events: Early Black Friday deals Nov. 12-15, Black Friday deals Nov. 23-29, and a Cyber Monday event Nov. 30-Dec. 2, with Walmart+ members getting early access. <span class="why">Why it matters: the structure of the holiday selling season is a direct input to Q4 sales and membership engagement</span> <a href="https://www.pymnts.com/news/retail/2026/walmart-turns-black-friday-into-3-part-shopping-event/">PYMNTS</a></li>
+    <li><span class="date">2026-10-27</span> — Walmart&#x27;s Mexico unit (Walmex) missed Q3 profit estimates as net profit fell 6% to 11.03 billion pesos versus 12.26 billion expected, revenue of 248.83 billion pesos also came in below forecasts, and EBITDA margin narrowed 30 basis points to 10.2%, though Walmex reaffirmed 2026 guidance. <span class="why">Why it matters: margin pressure in Walmart&#x27;s largest international unit tempers the international growth story, even as Mexican e-commerce GMV rose 15%</span> <a href="https://985theriver.com/2026/10/27/walmarts-margins-in-mexico-tighten-as-costs-outpace-sales-growth-2/">Reuters via 98.5 The River</a></li>
+  </ul>
+  </section>
+
+  <footer>
+    Source window: October 21&ndash;28, 2026. This file is replaced in full every run of the daily feed.
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
+    var cards = document.querySelectorAll("section.card");
+    function apply() {
+      var value = select.value;
+      var q = (search.value || "").toLowerCase();
+      cards.forEach(function (card) {
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
+      });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
+  })();
+</script>
+</body>
+</html>
