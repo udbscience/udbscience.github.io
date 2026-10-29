@@ -2,9 +2,8 @@ name: Sync Pages site from Drive
 
 on:
   schedule:
-    # Morning ET window, in UTC: covers 7:00-9:00 AM EDT (11:00-13:00 UTC)
-    # and 7:00-9:00 AM EST (12:00-14:00 UTC). Runs every 20 minutes.
-    - cron: '*/20 11-13 * * *'
+    # Morning window: 10:00-13:00 UTC (6:00-9:40 AM EDT / 5:00-8:40 AM EST). Runs every 20 minutes.
+        - cron: '*/20 10-13 * * *'
   workflow_dispatch:
 
 permissions:
