@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company News — Valuation &amp; Future Prospects</title>
+<style>  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+  header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+  .meta{color:#6b7280;font-size:15px;margin:0}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h2{font-size:20px;line-height:1.3;margin:0 0 10px}
+  ul{margin:6px 0 12px;padding-left:22px}
+  li{margin:10px 0}
+  .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  a{color:#0b5cab;font-weight:600;text-decoration:none}
+  section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
+  .note{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
+  @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
+  @media (prefers-color-scheme:dark){
+    body{background:#000;color:#f2f2f7}
+    header,section.card,a.card,.filter,.note{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
+    .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
+    .date{background:#14331f;color:#a7f3c8}
+    .why{color:#b0b3b8}
+    a{color:#7fb3ff}
+    section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="home"><a href="../../index.html">&larr; Back to home</a></p>
+  <header>
+    <h1>Company News — Valuation &amp; Future Prospects</h1>
+    <p class="meta">Last updated: Friday, October 30, 2026, 7:00 AM ET &middot; News list: 17 companies &middot; Window: October 23&ndash;30, 2026</p>
+  </header>
+  <div class="note">
+    <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
+  </div>
+<div class="filter">
+  <label for="companyFilter">Choose a company</label>
+  <select id="companyFilter" aria-label="Choose a company">
+    <option value="all">All companies</option>
+    <option value="upcoming">Upcoming in the next week</option>
+    <option value="AAPL">AAPL — Apple</option>
+    <option value="AMZN">AMZN — Amazon</option>
+    <option value="ASML">ASML — ASML Holding</option>
+    <option value="AWK">AWK — American Water Works</option>
+    <option value="BR">BR — Broadridge</option>
+    <option value="BRK-A">BRK-A — Berkshire Hathaway</option>
+    <option value="FCX">FCX — Freeport-McMoRan</option>
+    <option value="FISV">FISV — Fiserv</option>
+    <option value="FNMA">FNMA — Fannie Mae</option>
+    <option value="GEV">GEV — GE Vernova</option>
+    <option value="GOOGL">GOOGL — Alphabet</option>
+    <option value="ITOCY">ITOCY — Itochu</option>
+    <option value="JNJ">JNJ — Johnson &amp; Johnson</option>
+    <option value="MP">MP — MP Materials</option>
+    <option value="NFLX">NFLX — Netflix</option>
+    <option value="UNP">UNP — Union Pacific</option>
+    <option value="WMT">WMT — Walmart</option>
+  </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
+</div>
+  <section class="card" data-company="upcoming">
+    <h2>Upcoming in the next week</h2>
+    <ul>
+    <li><span class="date">Mon, Nov 2, 2026</span> — AAPL reports quarterly results (fiscal Q4) after the close. <a href="earnings.html">Earnings calendar</a></li>
+    <li><span class="date">Tue, Nov 3, 2026</span> — BR reports fiscal Q1 2027 results before the open, call 8:30 a.m. ET. <a href="https://www.zacks.com/stock/news/3017335/broadridge-gears-up-to-report-q1-earnings-whats-in-the-cards">Zacks</a></li>
+    <li><span class="date">Tue, Nov 3, 2026</span> — FISV reports Q3 results before the open, webcast 8:00 a.m. ET. <a href="https://www.americanbankingnews.com/2026/10/27/fiserv-fisv-set-to-announce-quarterly-earnings-on-tuesday.html">American Market News</a></li>
+    <li><span class="date">Thu, Nov 5, 2026</span> — MP reports Q3 results after the close, call 5:00 p.m. ET. <a href="https://kalkinemedia.com/us/stocks/metal-and-mining/can-mp-materials-nysemp-surprise-markets-with-november-updates">Kalkine</a></li>
+    <li><span class="date">Fri, Nov 6, 2026</span> — BRK-A reports Q3 results before the open. <a href="earnings.html">Earnings calendar</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AAPL">
+    <h2>AAPL — Apple</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Apple said a small number of iPhone Duo units have an inner-display issue and told affected customers to contact AppleCare for a replacement, after early buyers reported cracks and bright lines along the hinge; Apple has not published a failure rate or a confirmed cause. <span class="why">Why it matters: a durability question at the launch of a flagship product could mean warranty costs and reputational risk, though Apple describes the affected number as small</span> <a href="https://www.tradingview.com/news/gurufocus:f2df68406094b:0-apple-acknowledges-iphone-duo-screen-failures/">TradingView News</a></li>
+    <li><span class="date">2026-10-27</span> — Apple released iOS 27.2, adding Siri AI conversation memory and five new languages (French, Japanese, Korean, Portuguese and Spanish), plus Apple Pencil support for the iPhone Duo. <span class="why">Why it matters: on-device AI capability and Duo software support bear on iPhone differentiation and services/AI monetisation, though Apple has not disclosed pricing for expanded server-side AI features</span> <a href="https://www.latestly.com/technology/ios-27-2-rolls-out-siri-ai-gets-new-languages-iphone-duo-gains-pencil-support-7658356.html">LatestLY</a></li>
+    <li><span class="date">2026-10-28</span> — Apple unveiled a new MacBook Pro with Touch and a tandem-OLED (PROLED XDR) display, with preorders from October 28 and availability from November 6, starting at $2,899. <span class="why">Why it matters: a refreshed pro laptop line with a new display technology bears on holiday-quarter Mac revenue and on Apple&#x27;s premium hardware cycle</span> <a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/apple-unveils-touch-macbook-pro-while-apple-stock-trades-at-eur-312-50/70427384">ad-hoc-news</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AMZN">
+    <h2>AMZN — Amazon</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — Amazon CEO Andy Jassy said on the a16z Show, released October 23, 2026, that AWS capacity is sold out for 2026, largely sold out for 2027, and a good chunk of 2028 is also sold out, while AWS still holds back some capacity for on-demand EC2 and Bedrock use. <span class="why">Why it matters: committed capacity supports AWS growth visibility but also confirms data-center/power/memory constraints behind Amazon&#x27;s ~$220 billion 2026 capex plan</span> <a href="https://dealroom.co/news/165605-andy-jassy-aws-capacity-is-sold-out-for-2026-largely-sold-out-for-2027-a/">Dealroom News</a></li>
+    <li><span class="date">2026-10-29</span> — Amazon reported Q3 2026 net sales of $201.9 billion (+12% year over year), AWS sales of $46.0 billion (+39%), and operating income of $28.1 billion, a record 13.9% operating margin, while guiding Q4 net sales to $240-$247 billion and operating income to $28.5-$33.5 billion; trailing-twelve-month free cash flow was a $42.4 billion outflow on heavy AI capex. <span class="why">Why it matters: AWS acceleration and record operating income support the cloud-investment case, but the capex bill and negative free cash flow are the central valuation tension</span> <a href="https://evidinvest.com/blog/amzn-q3-2026-nine-filed-lines-before-the-print-2026-10-28">EvidInvest (Amazon Q3 release)</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="ASML">
+    <h2>ASML — ASML Holding</h2>
+    <ul>
+    <li><span class="date">2026-10-26</span> — Viettel&#x27;s contract for ASML DUV lithography tools remains unsigned, putting Vietnam&#x27;s 2027 pilot fab target at risk, according to the report. <span class="why">Why it matters: a stalled order in a new market is a small demand signal, but on its own it does not change the capacity-constrained order-book story</span> <a href="https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/asml-s-vietnam-order-stalls-as-ing-flags-a-dutch-economy-leaning-too-hard/70416543">ad-hoc-news</a></li>
+    <li><span class="date">2026-10-29</span> — Analysis of ASML&#x27;s October 14 update reports that planned 2027-2028 output will not fully cover customer requirements, with Zeiss EUV optics production and metrology capacity described as the binding constraint, even as Low-NA EUV capacity is set to rise about 30% in 2027. <span class="why">Why it matters: a supply-side bottleneck, not demand, may cap near-term revenue conversion, which bears directly on the timing of ASML&#x27;s growth</span> <a href="https://www.ad-hoc-news.de/boerse/unternehmensnachrichten/asml-can-see-the-demand-the-question-is-whether-zeiss-can-grind-enough-glass-to-meet-it/70432404">ad-hoc-news</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AWK">
+    <h2>AWK — American Water Works</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — American Water reported Q3 2026 adjusted EPS of $2.00, versus about $2.04 expected, on revenue of $1.51 billion; it narrowed 2026 adjusted EPS guidance to $6.07-$6.12 and initiated standalone 2027 adjusted EPS guidance of $6.53-$6.63, about 8% growth at the midpoint, while still targeting a close of its Essential Utilities merger by the end of Q1 2027. <span class="why">Why it matters: guidance and the merger timetable are the two direct inputs to the regulated-earnings outlook, while the modest miss tempers the near-term print</span> <a href="https://www.morningstar.com/news/pr-newswire/20261028la83673/american-water-reports-solid-third-quarter-2026-results-narrows-2026-eps-guidance-to-top-half-of-range-affirms-long-term-targets-initiates-standalone-2027-eps-guidance-reflecting-growth-of-8">Morningstar / PR Newswire</a></li>
+    <li><span class="date">2026-10-29</span> — On its Q3 call, American Water said the Essential Utilities merger has three state approvals plus constructive settlements in three more jurisdictions, reaffirmed 7%-9% long-term EPS and dividend growth, and laid out a standalone capital plan of $4.1 billion for 2027 and more than $48 billion through 2035, focused on infrastructure, PFAS remediation and lead-line replacement. <span class="why">Why it matters: merger progress and a much larger long-term capital plan set the regulated rate-base growth path that underpins the earnings outlook</span> <a href="https://www.fool.com/earnings/call-transcripts/2026/10/29/american-water-awk-q3-2026-earnings-call-transcript/">Motley Fool</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="BR">
+    <h2>BR — Broadridge</h2>
+    <ul>
+    <li><span class="date">2026-10-29</span> — Broadridge extended its CQG multi-asset offering with Kalshi, adding event-contract trading access through CQG&#x27;s platform. <span class="why">Why it matters: it extends Broadridge&#x27;s trading-technology reach into prediction markets, a growing but still small adjacent product area</span> <a href="https://www.prnewswire.com/news-releases/broadridge-extends-its-cqg-multi-asset-offering-with-kalshi-302921817.html">PR Newswire</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="BRK-A">
+    <h2>BRK-A — Berkshire Hathaway</h2>
+    <ul>
+    <li><span class="date">2026-10-29</span> — DaVita paid about $69 million to buy back 382,563 of its own shares from Berkshire Hathaway, leaving Berkshire with about a 45% stake in the dialysis provider, under the companies&#x27; standing repurchase arrangement. <span class="why">Why it matters: the transaction is a partial monetisation of a long-held Berkshire position, not an exit, and it modestly reduces Berkshire&#x27;s concentrated DaVita exposure</span> <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N46F1E6:0-davita-buys-back-69-million-shares-from-berkshire-which-retains-45-stake/">Reuters via TradingView</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FCX">
+    <h2>FCX — Freeport-McMoRan</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Freeport-McMoRan reported Q3 2026 adjusted EPS of $0.88, up 76% year over year and beating the ~$0.80 consensus, on revenue of $7.55 billion (+8.2%); the average realized copper price rose 39.7% to $6.54 per pound even as copper sales fell 23.3% amid the Grasberg ramp-up. <span class="why">Why it matters: pricing more than offset lower volumes this quarter, while the Grasberg recovery pace remains the key volume driver for 2027-2028</span> <a href="https://www.zacks.com/stock/news/3016354/fcx-q3-earnings-beat-estimates-on-strong-copper-pricing">Zacks</a></li>
+    <li><span class="date">2026-10-28</span> — On its Q3 call, Freeport said Grasberg had reached 67% of capacity and laid out copper sales rising from about 3.0 billion pounds in 2026 to 3.7 billion in 2027 and over 4 billion in 2028, while trimming 2026 sales guidance by about 2% and 2027 guidance by about 2.5% and putting 2027 capex at roughly $5.2 billion. <span class="why">Why it matters: the volume path and the capex bill together set the 2027-2028 cash-generation outlook, with Grasberg execution as the swing factor</span> <a href="https://www.zacks.com/stock/news/3017299/fcx-q3-earnings-call-highlights-grasberg-recovery-and-growth-plans">Zacks</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FISV">
+    <h2>FISV — Fiserv</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — Fiserv appointed Raj Seshadri, senior strategic advisor to Mastercard&#x27;s CEO, to its board effective Nov. 30, 2026, and said director Henrique De Castro will not seek reelection at the next annual meeting. <span class="why">Why it matters: a board refresh at a payments company in transition adds senior payments leadership experience and marks a governance change</span> <a href="https://www.pymnts.com/personnel/2026/fiserv-appoints-mastercard-senior-strategic-advisor-raj-seshadri-to-board/">PYMNTS</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FNMA">
+    <h2>FNMA — Fannie Mae</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — Fannie Mae reported Q3 2026 net income of $4.177 billion, up from $3.859 billion a year earlier, on net revenues of $7.651 billion; net worth rose to $119.637 billion at September 30, while the credit-loss provision rose and serious delinquency reached 0.62% in both the single-family and multifamily books. <span class="why">Why it matters: earnings power keeps building net worth, but rising provisions and delinquency are the credit watch items for the guaranty book</span> <a href="https://wrenews.com/fannie-mae-q3-2026-earnings-credit-loss-provision-mortgage-delinquencies/">WRE News</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GEV">
+    <h2>GEV — GE Vernova</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — GE Vernova reported Q3 2026 EPS of $4.81, beating the $4.03 consensus, on revenue of $12.64 billion versus $11.99 billion expected; orders were $29.3 billion (+96% organically), backlog reached $197 billion, and the company raised 2026 guidance and doubled its share-repurchase authorization to $20 billion. <span class="why">Why it matters: order and backlog momentum plus a guidance raise and larger buyback authorization bear directly on the growth and cash-return case</span> <a href="https://www.marketbeat.com/earnings/reports/2026-10-28-ge-vernova-stock/">MarketBeat</a></li>
+    <li><span class="date">2026-10-28</span> — GE Vernova agreed to buy Berlin-based Trench Group, a maker of high-voltage bushings, instrument transformers and coils, from Triton for $9 billion, funded about half in cash and half with debt, with completion expected in late 2027; Trench has about $5 billion of orders and framework agreements and is expected to generate $1.9 billion of revenue at about a 36% adjusted EBITDA margin in 2028. <span class="why">Why it matters: the deal vertically integrates a key grid-components supplier into Electrification, but a $9 billion partly debt-funded acquisition adds leverage and integration risk ahead of the late-2027 close</span> <a href="https://www.fool.com/earnings/takeaways/2026/10/28/ge-vernova-3-key-takeaways-for-long-term-investors/">Motley Fool</a></li>
+    <li><span class="date">2026-10-29</span> — On its Q3 call, GE Vernova said 2026 gas-equipment order pricing per kilowatt should run about 50% above 2025 levels, raised 2026 revenue guidance to $46.5-$47.5 billion and free-cash-flow guidance to $16-$17 billion, and put Electrification&#x27;s equipment backlog at $42 billion. <span class="why">Why it matters: pricing power on gas turbines plus a higher guidance range strengthens the margin and cash-generation case behind the buy-case debate</span> <a href="https://www.zacks.com/stock/news/3018996/ge-vernova-q3-earnings-call-highlights-pricing-and-grid-expansion">Zacks</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GOOGL">
+    <h2>GOOGL — Alphabet</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — Alphabet reported Q3 2026 EPS of $2.12, missing the $3.02 consensus, on revenue of $127.58 billion, slightly below the $127.96 billion estimate; Google Cloud revenue rose 103% to $30.7 billion and beat expectations, but an $8.7 billion loss on equity securities, primarily an unrealized loss on its SpaceX stake, cut earnings, while capex of $51.4 billion drove negative free cash flow of $9.1 billion and management guided to about $200 billion of capex this year, rising in 2027. <span class="why">Why it matters: cloud momentum is intact, but the earnings miss, the size of the capex bill, and negative free cash flow are the central questions for the AI-investment case</span> <a href="https://www.marketbeat.com/earnings/reports/2026-10-28-alphabet-inc-stock-1/">MarketBeat</a></li>
+    <li><span class="date">2026-10-29</span> — Alphabet confirmed it will keep raising AI infrastructure spending into 2027 after spending $51.4 billion in capex in Q3 alone, even as Google Cloud&#x27;s backlog swelled to $561 billion on AI compute demand. <span class="why">Why it matters: the backlog evidences real AI demand, but rising capex keeps free cash flow under pressure and makes capital efficiency the key valuation question</span> <a href="https://www.fool.com/investing/2026/10/29/alphabet-crushed-cloud-expectations-but-the-ai-bills-are-coming-due/">Motley Fool</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="ITOCY">
+    <h2>ITOCY — Itochu</h2>
+    <ul>
+    <li><span class="date">2026-10-28</span> — Itochu signed an agreement with Iberia to acquire a minority stake in IAG Engine Tech, a Madrid-based narrow-body aircraft engine maintenance company established in 2026, marking its first entry into narrow-body engine maintenance, repair and overhaul. <span class="why">Why it matters: it extends Itochu&#x27;s aviation activities from leasing and aftermarket services into direct participation in engine maintenance operations</span> <a href="https://aviator.aero/press/itochu-to-acquire-stake-in-iag-engine-tech-entering-narrowbody-engine-mro-market">Aviator</a></li>
+    <li><span class="date">2026-10-28</span> — Itochu also announced a joint investment with Mercuria Holdings and En Growth Fund in Capital Ship, whose Smart Technologies unit serves more than 2,500 retailers through duty-free and tax-refund systems, ahead of Japan&#x27;s planned November 2026 duty-free system change. <span class="why">Why it matters: it positions Itochu in the infrastructure behind Japan&#x27;s reworked duty-free shopping system, a small but timed retail-payments opportunity</span> <a href="https://www.ad-hoc-news.de/boerse/corporate-news/itochu-enters-aircraft-engine-mro-market-while-itochu-stock-costs-eur/70424699">ad-hoc-news</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="JNJ">
+    <h2>JNJ — Johnson &amp; Johnson</h2>
+    <ul>
+    <li><span class="date">2026-10-23</span> — An Ohio state court jury found in Johnson &amp; Johnson&#x27;s favor on Oct. 23 in a talc mesothelioma wrongful-death lawsuit, a defense verdict in the ongoing individual talc litigation. <span class="why">Why it matters: talc litigation is a long-running overhang, so defense verdicts reduce — though do not end — that liability uncertainty</span> <a href="https://atumio.com/news/jj-wins-ohio-talc-mesothelioma-trial-2026/">Atumio / Law360</a></li>
+    <li><span class="date">2026-10-26</span> — Johnson &amp; Johnson reported that ERLEADA (apalutamide) given before and after surgery cut the risk of recurrence or death by 62% versus surgery alone in high-risk prostate cancer patients. <span class="why">Why it matters: positive perioperative oncology data supports the label-expansion prospects of an established prostate cancer drug</span> <a href="https://insiderpost.org/jnj-johnson-johnson-reports-new-erleada-data-2026-10-26.html">Johnson &amp; Johnson / InsiderPost</a></li>
+    <li><span class="date">2026-10-27</span> — Johnson &amp; Johnson announced an Enterprise Business Review for December 8, 2026, with an enterprise overview from CEO Joaquin Duato and a financial overview from CFO Joe Wolk, covering the Innovative Medicine and MedTech businesses, pipeline developments and long-term strategy. <span class="why">Why it matters: a full strategy review is the next scheduled venue for updated segment and pipeline priorities, which frame the 2027 outlook</span> <a href="https://www.ad-hoc-news.de/boerse/news/vorboerse/johnson-und-johnson-stock-schedules-december-8-review-rises-0-31-percent-pre-market/70424297">ad-hoc-news</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="MP">
+    <h2>MP — MP Materials</h2>
+    <ul>
+    <li><span class="date">2026-10-26</span> — Reports said U.S.-listed rare-earth stocks rose on Monday after reports of the Trump administration&#x27;s Project Vault critical-minerals stockpile plan, which would combine a $10 billion Export-Import Bank loan with $1.67 billion of private capital to build a domestic stockpile and reduce reliance on China. <span class="why">Why it matters: a government-backed stockpile could support domestic rare-earth demand, but this is a reported plan, not a confirmed MP-specific contract, so it is a policy tailwind rather than a company result</span> <a href="https://bitrss.com/u-s-rare-earth-stocks-rise-as-trump-prepares-critical-mineral-stockpile-plan-179534">BitRss (citing CNBC/Bloomberg)</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="NFLX">
+    <h2>NFLX — Netflix</h2>
+    <ul>
+    <li><span class="date">2026-10-26</span> — Peter Rice began as Netflix&#x27;s chief content officer on Oct. 26, 2026, succeeding Bela Bajaria, with a global remit across scripted and unscripted series, films, and live events. <span class="why">Why it matters: the content chief sets programming strategy for Netflix&#x27;s largest cost line and a key driver of subscriber retention</span> <a href="https://hollywoodweeklymagazine.com/peter-rice-netflix-chief-content-officer/">Hollywood Weekly</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="UNP">
+    <h2>UNP — Union Pacific</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Associated Industries of Florida told the U.S. rail regulator it opposes the proposed Union Pacific–Norfolk Southern merger, citing concerns about effects on Florida&#x27;s freight network and rail-served industries. <span class="why">Why it matters: further state-level shipper opposition adds to the regulatory record the Surface Transportation Board must weigh</span> <a href="https://www.mlex.com/mlex/mergers-acquisitions/articles/2542915/associated-industries-of-florida-opposes-union-pacific-norfolk-southern-merger">MLex</a></li>
+    <li><span class="date">2026-10-27</span> — Union Pacific published a customer letter pitching the Norfolk Southern merger as the answer to autonomous trucking competition, saying the combination would create 10,000 single-line lanes and cut transit times by 24 to 48 hours, against trucking&#x27;s 43% share of U.S. freight modes. <span class="why">Why it matters: the company is now framing the merger publicly as a competitive response to driverless trucks, which sets the operating test regulators and shippers will judge it against</span> <a href="https://www.up-nstranscontinental.com/letters/autonomous-trucking-is-here-why-rail-cannot-be-the-industry-that-waited/">Union Pacific</a></li>
+    <li><span class="date">2026-10-28</span> — Canadian Pacific Kansas City CEO Keith Creel said on October 28 that cautioning shippers against opposing the proposed Union Pacific–Norfolk Southern merger would amount to chilling dissent, and said CPKC is seeking gateway protections and shipper-access safeguards if the deal is approved. <span class="why">Why it matters: a rival railroad&#x27;s public intervention sharpens the regulatory contest and the safeguards debate around the $85 billion merger</span> <a href="https://www.supplypro.ca/cpkc-head-calls-out-alleged-threats-to-shippers-who-oppose-major-u-s-rail-merger/">Supply Professional</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="WMT">
+    <h2>WMT — Walmart</h2>
+    <ul>
+    <li><span class="date">2026-10-27</span> — Walmart&#x27;s Mexico unit (Walmex) missed Q3 profit estimates as net profit fell 6% to 11.03 billion pesos versus 12.26 billion expected, revenue of 248.83 billion pesos also came in below forecasts, and EBITDA margin narrowed 30 basis points to 10.2%, though Walmex reaffirmed 2026 guidance. <span class="why">Why it matters: margin pressure in Walmart&#x27;s largest international unit tempers the international growth story, even as Mexican e-commerce GMV rose 15%</span> <a href="https://985theriver.com/2026/10/27/walmarts-margins-in-mexico-tighten-as-costs-outpace-sales-growth-2/">Reuters via 98.5 The River</a></li>
+    <li><span class="date">2026-10-28</span> — The FTC ordered Walmart and eight other companies to provide information about their use of personal data to set prices and worker compensation, under a Section 6(b) study with 45 days to respond; the orders are a study, not a finding of wrongdoing. <span class="why">Why it matters: scrutiny of personalized pricing could eventually constrain pricing practices, though a study order alone changes nothing yet</span> <a href="https://www.tipranks.com/news/the-fly/ftc-orders-delta-walmart-uber-to-hand-over-data-on-personalized-pricing-thefly-news">TipRanks / TheFly</a></li>
+    <li><span class="date">2026-10-28</span> — Walmart unveiled its holiday meal basket at $3.50 per person, the lowest since the program launched in 2022, down from $4 last year, with 26 items for 10 people. <span class="why">Why it matters: aggressive holiday value pricing is a direct input to Q4 traffic and margins in the crucial selling season</span> <a href="https://cruisin929.com/2026/10/28/walmart-cuts-holiday-meal-basket-price-to-3-50-per-person/">Reuters</a></li>
+  </ul>
+  </section>
+
+  <footer>
+    Source window: October 23&ndash;30, 2026. This file is replaced in full every run of the daily feed.
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
+    var cards = document.querySelectorAll("section.card");
+    function apply() {
+      var value = select.value;
+      var q = (search.value || "").toLowerCase();
+      cards.forEach(function (card) {
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
+      });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
+  })();
+</script>
+</body>
+</html>
