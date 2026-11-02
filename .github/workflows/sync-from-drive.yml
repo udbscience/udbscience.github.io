@@ -2,8 +2,9 @@ name: Sync Pages site from Drive
 
 on:
   schedule:
-    # Morning window: 10:00-13:00 UTC (6:00-9:40 AM EDT / 5:00-8:40 AM EST). Runs every 20 minutes.
-        - cron: '*/20 10-13 * * *'
+    # Extract once at 7:25 AM Eastern: 11:25 UTC in daylight time, 12:25 UTC in standard time. GitHub Actions schedules are UTC-only.
+    - cron: '25 11 * * *'
+    - cron: '25 12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -15,38 +16,25 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
-
       - name: Download site zip from Drive
         run: |
           set -e
           curl -L -o /tmp/pages-sync.zip "https://drive.google.com/uc?export=download&id=1c6_wPvcBBeWdMHo50Qf_u0dJreVsENDP"
           ls -l /tmp/pages-sync.zip
           unzip -t /tmp/pages-sync.zip > /dev/null
-
-      - name: Apply zip if newer than last sync
+      - name: Apply zip
         id: apply
         run: |
           set -e
           mkdir -p /tmp/site
           unzip -o -q /tmp/pages-sync.zip -d /tmp/site
-          NEW_TS="$(cat /tmp/site/sync.json 2>/dev/null | python3 -c 'import json,sys; print(json.load(sys.stdin).get("generated_at",""))' || true)"
-          OLD_TS=""
-          if [ -f .drive-sync-marker ]; then OLD_TS="$(cat .drive-sync-marker)"; fi
-          echo "new=$NEW_TS old=$OLD_TS"
-          if [ -n "$NEW_TS" ] && [ -n "$OLD_TS" ] && ! [ "$NEW_TS" \> "$OLD_TS" ]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Zip is not newer than last sync; skipping."
-            exit 0
-          fi
+          NEW_TS="$(cat /tmp/site/sync.json 2>/dev/null | python3 -c 'import json,sys; print(json.load(sys.stdin).get("generated_at",""))')"
           # Copy site files into the repo, preserving .github (the workflow itself)
           # and .git. sync.json is kept out of the published site.
           rm -f /tmp/site/sync.json
           cp -r /tmp/site/. .
           if [ -n "$NEW_TS" ]; then printf '%s' "$NEW_TS" > .drive-sync-marker; fi
-          echo "skip=false" >> "$GITHUB_OUTPUT"
-
       - name: Commit and push if changed
-        if: steps.apply.outputs.skip != 'true'
         run: |
           set -e
           git config user.name "pages-sync"
