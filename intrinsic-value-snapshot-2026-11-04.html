@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<title>Intrinsic Value Snapshot — Nov 4, 2026</title>
+<style>
+  :root{--bg:#f7f7f4;--surface:#ffffff;--surface-2:#eef1ed;--ink:#131a16;--muted:#5b6a60;--line:#dde3dc;--green:#0f6b3f;--green-bg:#e6f3eb;--red:#b42318;--red-bg:#fdecea;--amber:#8a5a00;--amber-bg:#fef3c7;--teal:#0e4f4a;--shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04)}
+  @media (prefers-color-scheme: dark){:root{--bg:#0f1411;--surface:#171e1a;--surface-2:#1f2a23;--ink:#eef2ee;--muted:#9ab0a2;--line:#2a3630;--green:#4ade80;--green-bg:#123524;--red:#f87171;--red-bg:#3a1614;--amber:#fbbf24;--amber-bg:#33260a;--teal:#5eead4;--shadow:0 1px 3px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:24px 18px 48px}
+  .pill{display:inline-block;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+  h1{font-size:32px;line-height:1.15;margin:14px 0 10px;letter-spacing:-.01em}
+  .lede{color:var(--muted);margin:0 0 18px}
+  .lede strong{color:var(--ink)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px;margin:16px 0}
+  .card h2{font-size:21px;margin:0 0 10px;line-height:1.2}
+  .card h3{font-size:18px;margin:18px 0 8px}
+  .card p,.card li{font-size:16px}
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .kpi b{font-size:26px;display:block}
+  .kpi span{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .kpi p{margin:4px 0 0;font-size:13px;color:var(--muted);line-height:1.45}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+  thead th.num,tbody td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tbody td{padding:11px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  .ticker{font-weight:800}
+  .company{color:var(--muted);font-size:13px;display:block}
+  .badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+  .badge.up{background:var(--green-bg);color:var(--green)}
+  .badge.down{background:var(--red-bg);color:var(--red)}
+  .badge.flat{background:var(--amber-bg);color:var(--amber)}
+  .badge.nm{background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
+  .pos{color:var(--green);font-weight:700}.neg{color:var(--red);font-weight:700}
+  .callout{border-left:4px solid var(--green);background:var(--green-bg);border-radius:0 10px 10px 0;padding:12px 14px;margin:12px 0}
+  .callout.red{border-color:var(--red);background:var(--red-bg)}
+  .callout.amber{border-color:var(--amber);background:var(--amber-bg)}
+  .callout strong{display:block;font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+  .callout p{margin:0;font-size:15px}
+  .method{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;line-height:1.7}
+  .foot{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.6}
+  ul{padding-left:20px} li{margin:7px 0}
+  @media (max-width:560px){.kpis{grid-template-columns:1fr 1fr}table{font-size:14px}thead th:nth-child(5),tbody td:nth-child(5){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">As of close — Wed, Nov 4, 2026</span>
+  <span class="pill">Watchlist · 16 names · 9 valued, 7 n/m or set aside</span>
+  <h1>Intrinsic value vs. price, after earnings.</h1>
+  <p class="lede">Same method as the October 20 snapshot — <strong>10-year EPS-growth DCF, growth capped at 15%, 10% discount rate, 15× terminal multiple</strong> — rebuilt after Alphabet (Oct 28), Amazon (Oct 29) and Apple (Nov 2) reported. Three names screen undervalued, two at fair value, four rich, and seven don’t fit this model — or, for Fiserv, the model figure itself has been set aside.</p>
+
+  <div class="kpis">
+    <div class="kpi"><b style="color:var(--green)">3</b><span>Undervalued</span><p>BR, NFLX, GOOGL — upside above +10%</p></div>
+    <div class="kpi"><b>2</b><span>At fair value</span><p>AMZN +6% and UNP −4% — no margin either way</p></div>
+    <div class="kpi"><b style="color:var(--red)">4</b><span>Overvalued</span><p>AAPL, GEV, JNJ, WMT on this model</p></div>
+    <div class="kpi"><b style="color:var(--muted)">7</b><span>Not meaningful / set aside</span><p>BRK-B, PLTR, MP, FCX, ASML, FNMA — plus FISV, superseded</p></div>
+  </div>
+
+  <section class="card">
+    <h2>The full watchlist — sorted by upside</h2>
+    <table>
+      <thead><tr><th>Company</th><th class="num">Price</th><th class="num">Intrinsic value</th><th class="num">Upside</th><th class="num">Buy price *</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ticker">BR</span><span class="company">Broadridge</span></td><td class="num">$189.29</td><td class="num">$333.71</td><td class="num pos">+76%</td><td class="num">$250.28</td><td><span class="badge up">Undervalued</span></td></tr>
+        <tr><td><span class="ticker">NFLX</span><span class="company">Netflix</span></td><td class="num">$66.39</td><td class="num">$94.33</td><td class="num pos">+42%</td><td class="num">$70.75</td><td><span class="badge up">Undervalued</span></td></tr>
+        <tr><td><span class="ticker">GOOGL</span><span class="company">Alphabet †</span></td><td class="num">$288.93</td><td class="num">$397.52</td><td class="num pos">+38%</td><td class="num">$298.14</td><td><span class="badge up">Undervalued</span></td></tr>
+        <tr><td><span class="ticker">AMZN</span><span class="company">Amazon †</span></td><td class="num">$266.03</td><td class="num">$280.73</td><td class="num pos">+6%</td><td class="num">$210.55</td><td><span class="badge flat">Fair value</span></td></tr>
+        <tr><td><span class="ticker">UNP</span><span class="company">Union Pacific</span></td><td class="num">$308.53</td><td class="num">$296.27</td><td class="num neg">−4%</td><td class="num">$222.20</td><td><span class="badge flat">Fair value</span></td></tr>
+        <tr><td><span class="ticker">AAPL</span><span class="company">Apple</span></td><td class="num">$349.51</td><td class="num">$325.70</td><td class="num neg">−7%</td><td class="num">$244.28</td><td><span class="badge down">Overvalued</span></td></tr>
+        <tr><td><span class="ticker">GEV</span><span class="company">GE Vernova ‡</span></td><td class="num">$832.83</td><td class="num">$697.00</td><td class="num neg">−16%</td><td class="num">$522.75</td><td><span class="badge down">Overvalued</span></td></tr>
+        <tr><td><span class="ticker">JNJ</span><span class="company">Johnson &amp; Johnson</span></td><td class="num">$276.32</td><td class="num">$207.66</td><td class="num neg">−25%</td><td class="num">$155.75</td><td><span class="badge down">Overvalued</span></td></tr>
+        <tr><td><span class="ticker">WMT</span><span class="company">Walmart</span></td><td class="num">$129.17</td><td class="num">$55.33</td><td class="num neg">−57%</td><td class="num">$41.50</td><td><span class="badge down">Overvalued</span></td></tr>
+        <tr><td><span class="ticker">FISV</span><span class="company">Fiserv §</span></td><td class="num">$62.05</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">Superseded</span><span class="company">Oct 20 figure set aside Oct 29</span></td></tr>
+        <tr><td><span class="ticker">BRK-B</span><span class="company">Berkshire Hathaway</span></td><td class="num">$579.09</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">Conglomerate — EPS method doesn’t fit</span></td></tr>
+        <tr><td><span class="ticker">PLTR</span><span class="company">Palantir</span></td><td class="num">$171.70</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">~280× trailing EPS — price is a growth expectation</span></td></tr>
+        <tr><td><span class="ticker">MP</span><span class="company">MP Materials</span></td><td class="num">$35.91</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">Negative EPS</span></td></tr>
+        <tr><td><span class="ticker">FCX</span><span class="company">Freeport-McMoRan</span></td><td class="num">$62.60</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">Cyclical — needs mid-cycle copper earnings</span></td></tr>
+        <tr><td><span class="ticker">ASML</span><span class="company">ASML Holding</span></td><td class="num">$1,496.30</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">Separate entry value ~$1,425; buy ~$1,069</span></td></tr>
+        <tr><td><span class="ticker">FNMA</span><span class="company">Fannie Mae</span></td><td class="num">$4.80</td><td class="num">n/m</td><td class="num">—</td><td class="num">—</td><td><span class="badge nm">n/m</span><span class="company">Filings only — too political a pile</span></td></tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted);font-size:13px">* Buy price = intrinsic value less 25% margin of safety. “n/m” = not meaningful on this model — no buy price shown. † GOOGL and AMZN use core (ex-investment-gain) trailing EPS — see the distortion note below. ‡ GEV uses its separate Oct 8 cash-flow model ($697), not this EPS method. § FISV is not ranked — see below.</p>
+  </section>
+
+  <section class="card">
+    <h2>What changed vs. Oct 20</h2>
+    <ul>
+      <li><strong>GOOGL — Q3 reported Oct 28:</strong> GAAP EPS $2.12, revenue $127.58B. Upside +17% → <strong>+38%</strong>, mostly because the price fell to $288.93 from $340.28 while operating earnings held. See the distortion note — the headline GAAP trailing EPS is not used.</li>
+      <li><strong>AMZN — Q3 reported Oct 29:</strong> EPS $1.89, revenue $201.94B, operating income $28.08B. Upside ~0% → <strong>+6%</strong> (fair value). See the distortion note.</li>
+      <li><strong>AAPL — fiscal Q4 reported Nov 2:</strong> revenue $114.48B, EPS $2.10 (+14%), gross margin 47.9%; Dec-quarter guide revenue +7–10%, gross margin 45–46%. FY2026 EPS $8.98 replaces FY2025 $7.58. Upside −19% → <strong>−7%</strong> — still overvalued on this model, but the gap narrowed.</li>
+      <li><strong>BSP removed:</strong> Bending Spoons is no longer on the watchlist (removed Oct 24) and does not appear in this snapshot at all.</li>
+      <li><strong>ASML and FNMA added as n/m:</strong> both are on the current 16-name watchlist but were not in the Oct 20 table. ASML: separate entry value ~$1,425, buy ~$1,069. FNMA: filings only, too political.</li>
+      <li><strong>FISV superseded:</strong> the Oct 20 +317% / $201.12 is <strong>not</strong> carried forward. The Oct 29 verdict paper calls it a model artifact and sets it aside. FISV is shown as Superseded, not ranked. Its Nov 3 Q3 (adjusted EPS $1.75, adjusted revenue $4.85B flat, GAAP loss on a $6.45B goodwill impairment, FY2026 guidance $7.20–$7.40 affirmed) does not restore the old figure.</li>
+      <li><strong>Carried forward unchanged:</strong> BR ($333.71), NFLX ($94.33), UNP ($296.27), JNJ ($207.66), GEV ($697, FCF model), WMT ($55.33). Only their prices moved, so their upsides moved with price: BR +85% → +76%, NFLX +37% → +42%, UNP +3% → −4%, JNJ −20% → −25%, GEV −22% → −16%, WMT −53% → −57%.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Calculation inputs — so every number can be checked</h2>
+    <p>DCF factor at the 15% growth cap is 36.27× trailing EPS (10% discount, 15× terminal). All three reporters’ 10-year EPS CAGRs are at or above the cap on a split-adjusted basis (GOOGL ~26%, AMZN ~46%, AAPL ~16%), so all three use the 36.27× factor.</p>
+    <table>
+      <thead><tr><th>Company</th><th class="num">Trailing EPS used</th><th class="num">10-yr CAGR used</th><th class="num">Intrinsic value</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ticker">GOOGL</span><span class="company">Core, ex-gain (see note)</span></td><td class="num">$10.96</td><td class="num">15% (cap)</td><td class="num">$397.52</td></tr>
+        <tr><td><span class="ticker">AMZN</span><span class="company">Core, ex-gain (see note)</span></td><td class="num">$7.74</td><td class="num">15% (cap)</td><td class="num">$280.73</td></tr>
+        <tr><td><span class="ticker">AAPL</span><span class="company">FY2026 (ended Sep 26, 2026)</span></td><td class="num">$8.98</td><td class="num">15% (cap)</td><td class="num">$325.70</td></tr>
+        <tr><td><span class="ticker">BR</span><span class="company">Carried from Oct 20</span></td><td class="num">$9.86</td><td class="num">14.1%</td><td class="num">$333.71</td></tr>
+        <tr><td><span class="ticker">NFLX</span><span class="company">Carried from Oct 20</span></td><td class="num">$2.60</td><td class="num">15% (cap)</td><td class="num">$94.33</td></tr>
+        <tr><td><span class="ticker">UNP</span><span class="company">Carried from Oct 20</span></td><td class="num">$12.03</td><td class="num">9.8%</td><td class="num">$296.27</td></tr>
+        <tr><td><span class="ticker">JNJ</span><span class="company">Carried from Oct 20</span></td><td class="num">$11.03</td><td class="num">~6%</td><td class="num">$207.66</td></tr>
+        <tr><td><span class="ticker">GEV</span><span class="company">Oct 8 two-stage FCF DCF</span></td><td class="num">—</td><td class="num">—</td><td class="num">$697.00</td></tr>
+        <tr><td><span class="ticker">WMT</span><span class="company">Carried from Oct 20</span></td><td class="num">$2.73</td><td class="num">~7%</td><td class="num">$55.33</td></tr>
+      </tbody>
+    </table>
+    <h3>Core trailing EPS — the two adjusted names, quarter by quarter</h3>
+    <ul>
+      <li><strong>GOOGL core $10.96</strong> = Q4 2025 $2.82 + Q1 2026 $2.62 + Q2 2026 $2.85 + Q3 2026 $2.67. Reported GAAP quarters were $5.11, $9.11 and $2.12; the ex-gain figures strip the disclosed equity-security gains/losses ($37.7B in Q1, $98.0B in Q2, −$8.7B in Q3). Unadjusted GAAP trailing EPS is $19.16, which would give a $694.93 “IV” — that number is shown here only so the adjustment is auditable; capitalising a one-off paper gain at 36× as if it recurred for ten years would be the error, not the insight.</li>
+      <li><strong>AMZN core $7.74</strong> = Q4 2025 $1.95 + Q1 2026 $1.95 + Q2 2026 $1.95 + Q3 2026 $1.89. Reported GAAP quarters were $2.78, $5.75 and $1.89; the Q1–Q2 figures include Anthropic revaluation gains ($12.3B in Q1, $50.5B in Q2). Unadjusted GAAP trailing EPS is $12.37, which would give a $448.66 “IV” — again shown only for auditability.</li>
+      <li><strong>AAPL $8.98</strong> is FY2026 diluted EPS (net income $132.18B ÷ 14.72B diluted shares, EDGAR 10-K). No investment-gain adjustment applies. FY2025 was $7.46; the 10-year split-adjusted CAGR to FY2026 is ~16%, capped at 15%.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Three numbers that need honest labels</h2>
+    <div class="callout">
+      <strong>GOOGL &amp; AMZN · the GAAP trailing EPS is not the operating story</strong>
+      <p>Both companies’ trailing GAAP EPS is dominated by 2026 non-cash equity revaluations — Alphabet’s $37.7B (Q1) and $98.0B (Q2) gains, partly reversed by an $8.7B Q3 loss; Amazon’s Anthropic marks, $12.3B (Q1) and $50.5B (Q2). The table uses disclosed ex-gain core EPS for both, with the unadjusted figures above. Read the +38% and +6% on the core numbers; the GAAP figures would flatter both by roughly $300 and $170 of “value” that no operating business earned.</p>
+    </div>
+    <div class="callout amber">
+      <strong>FISV · +317% — superseded, not updated</strong>
+      <p>The Oct 29 verdict paper (Fiserv Feb 10 and Aug 6, 2026 releases; Zacks; WallStreetZen) concludes the $201.12 was a model artifact: trailing GAAP EPS has since fallen to $5.21, FY2026 guidance was cut to $7.20–$7.40, organic revenue is flat to −1%, and consensus long-term growth is 1.4%. The Nov 3 Q3 — adjusted EPS $1.75 vs $1.72 consensus, guidance affirmed, not raised — does not overturn that verdict. One beat is explicitly not enough.</p>
+    </div>
+    <div class="callout red">
+      <strong>WMT · −57% — a basis gap, not an error</strong>
+      <p>The model uses trailing GAAP EPS of $2.73. The market pays ~40× on adjusted earnings and a growth story. The model is saying the <em>multiple</em>, not the business, is the risk.</p>
+    </div>
+    <p><strong>GE Vernova is the exception in the table.</strong> Its $697 value and $523 buy threshold (25% margin of safety) come from the Oct 8 two-stage free-cash-flow DCF, not this EPS method. At $832.83 it remains above its IV and well above the buy threshold.</p>
+    <h3>Method</h3>
+    <div class="method">10-yr EPS-growth DCF<br>Growth capped at 15%, floored at 0% · Discount 10%<br>Terminal multiple 15× · Trailing GAAP EPS<br>EPS = NetIncomeLoss ÷ split-adjusted shares (EDGAR)</div>
+    <p style="font-size:14px;color:var(--muted)">This is a screening model, not a recommendation. It rewards trailing earnings and punishes high multiples by construction — which is exactly why the footnotes above matter as much as the ranking.</p>
+  </section>
+
+  <section class="card">
+    <h2>How to read this</h2>
+    <p style="margin:0">Start with the ranking, then interrogate it. <strong>Broadridge (+76%) and Netflix (+42%)</strong> are the cleanest “wonderful business, plausible discount” reads, unchanged in value since Oct 20 — only their prices moved. <strong>Alphabet (+38% on core earnings)</strong> is a larger discount than Oct 20’s +17%, driven by the price fall, not by the paper gains. <strong>Amazon (+6%) and Union Pacific (−4%)</strong> sit essentially at fair value: no margin of safety, no obvious overpayment. <strong>Apple (−7%)</strong> screens less rich than before, on a genuinely better fiscal year. At the other end, <strong>Walmart and Johnson &amp; Johnson</strong> screen rich on trailing GAAP earnings — the model is flagging multiple risk, not saying the businesses are broken.</p>
+  </section>
+
+  <div class="foot">
+    <span><strong>Sources:</strong> Prices as of close, Wed Nov 4, 2026 (Yahoo chart API) · Earnings verified against company releases / EDGAR 8-Ks: GOOGL Q3 Oct 28 (EPS $2.12, revenue $127.58B), AMZN Q3 Oct 29 (EPS $1.89, revenue $201.94B), AAPL fiscal Q4 Nov 2 (EPS $2.10, revenue $114.48B) · EDGAR companyfacts for trailing EPS and CAGRs · GEV from Oct 8, 2026 FCF model · FISV verdict Oct 29, 2026</span>
+    <span>Snapshot only — prices and values will move. Valuation information only. Not investment advice, and no trades are placed.</span>
+  </div>
+</div>
+</body>
+</html>
