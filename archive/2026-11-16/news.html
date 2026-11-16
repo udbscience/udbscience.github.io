@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company News — Valuation &amp; Future Prospects</title>
+<style>  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+  header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+  .meta{color:#6b7280;font-size:15px;margin:0}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h2{font-size:20px;line-height:1.3;margin:0 0 10px}
+  ul{margin:6px 0 12px;padding-left:22px}
+  li{margin:10px 0}
+  .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  a{color:#0b5cab;font-weight:600;text-decoration:none}
+  section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
+  .note{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
+  @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
+  @media (prefers-color-scheme:dark){
+    body{background:#000;color:#f2f2f7}
+    header,section.card,a.card,.filter,.note{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
+    .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
+    .date{background:#14331f;color:#a7f3c8}
+    .why{color:#b0b3b8}
+    a{color:#7fb3ff}
+    section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
+  }</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="home"><a href="../../index.html">&larr; Back to home</a></p>
+    <header>
+    <h1>Company News — Valuation &amp; Future Prospects</h1>
+    <p class="meta">Last updated: Monday, November 16, 2026, 7:00 AM ET &middot; News list: 17 companies &middot; Window: November 9&ndash;November 16, 2026</p>
+  </header>
+  <div class="note">
+    <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
+  </div>
+  <div class="filter">
+  <label for="companyFilter">Choose a company</label>
+  <select id="companyFilter" aria-label="Choose a company">
+    <option value="all">All companies</option>
+    <option value="upcoming">Upcoming in the next week</option>
+    <option value="AAPL">AAPL — Apple</option>
+    <option value="AMZN">AMZN — Amazon</option>
+    <option value="ASML">ASML — ASML Holding</option>
+    <option value="AWK">AWK — American Water Works</option>
+    <option value="BR">BR — Broadridge</option>
+    <option value="BRK-A">BRK-A — Berkshire Hathaway</option>
+    <option value="FCX">FCX — Freeport-McMoRan</option>
+    <option value="FISV">FISV — Fiserv</option>
+    <option value="FNMA">FNMA — Fannie Mae</option>
+    <option value="GEV">GEV — GE Vernova</option>
+    <option value="GOOGL">GOOGL — Alphabet</option>
+    <option value="ITOCY">ITOCY — Itochu ADR</option>
+    <option value="JNJ">JNJ — Johnson &amp; Johnson</option>
+    <option value="MP">MP — MP Materials</option>
+    <option value="NFLX">NFLX — Netflix</option>
+    <option value="UNP">UNP — Union Pacific</option>
+    <option value="WMT">WMT — Walmart</option>
+  </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
+</div>
+  <section class="card" data-company="upcoming">
+    <h2>Upcoming in the next week</h2>
+    <ul>
+  
+    <li><span class="date">Tue, Nov 17, 2026</span> — Disney (DIS, speculative) reports fiscal Q4 2026 results before the open; earnings call 8:30 AM ET; consensus EPS about $1.67–$1.69, revenue about $25.2B. <a href="http://www.zacks.com/stock/research/DIS/earnings-calendar?tab=dividends">Zacks</a></li>
+    <li><span class="date">Wed, Nov 18, 2026</span> — Comments, protests and requests for conditions are due at the Surface Transportation Board on the Union Pacific–Norfolk Southern merger (FD 36873). <a href="https://steelwheelsco.substack.com/p/the-manifest-issue-17-november-7">The Manifest</a></li>
+    <li><span class="date">Thu, Nov 19, 2026</span> — Walmart (WMT) reports Q3 results before the open; call 8:00 AM ET; consensus EPS about $0.64, revenue about $187.2B. <a href="https://www.marketbeat.com/earnings/reports/2026-11-19-walmart-inc-stock/">MarketBeat</a></li>
+    <li><span class="date">Thu, Nov 19, 2026</span> — Alibaba (BABA, speculative) reports September-quarter results before the U.S. open; call 7:00 AM ET; consensus EPS $1.39–$1.46. <a href="https://data.alibabagroup.com/ecms-files/1532295521/1281a908-8f69-4b67-90e2-1720d6a4e438/Alibaba%20Group%20Will%20Announce%20September%20Quarter%202026%20Results%20on%20November%2019%2C%202026.pdf">Alibaba Group</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AAPL">
+    <h2>AAPL — Apple</h2>
+    <ul><li><span class="date">2026-11-13</span> — Apple&#x27;s HomeView smart-home display and the fourth-generation Apple TV 4K went on sale today, both priced at $299; HomeView is a 7-inch display built around Siri AI that recognizes up to six household members, and it is not sold in the European Union because Siri AI is unavailable there. <span class="why">Why it matters: Apple&#x27;s first dedicated smart-home display, a new hardware category under new CEO John Ternus heading into the holiday quarter, though small next to iPhone and Mac revenue.</span> <a href="https://www.macrumors.com/2026/11/13/apple-launches-two-products-today/">MacRumors</a></li><li><span class="date">2026-11-15</span> — Bloomberg&#x27;s Mark Gurman reported Apple&#x27;s first smart glasses, code-named N50, will have no AR display and will run third-party apps through Siri AI on a paired iPhone, with a reveal targeted at WWDC in June 2027 and shipments later that year; software, not hardware, is the holdup and Siri delays could push the date. <span class="why">Why it matters: the first detail of Apple&#x27;s AI-wearables plan under new CEO John Ternus, though the product is still more than a year out and Apple has not announced it.</span> <a href="https://www.macobserver.com/news/apples-ios-27-3-siri-app-integrations-are-preparing-the-way-for-smart-glasses/">Mac Observer (Bloomberg)</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="AMZN">
+    <h2>AMZN — Amazon</h2>
+    <ul><li><span class="date">2026-11-11</span> — AWS opened its South America (Chile) cloud region to select customers, its first in Chile and third in Latin America, with general availability expected by the end of 2026; Amazon plans to invest more than $4 billion in Chile to support the region, a commitment first announced in May 2025. <span class="why">Why it matters: a material capacity expansion for AWS, Amazon&#x27;s main growth engine, though the region is only in early access and AI services arrive within the first year.</span> <a href="https://www.aboutamazon.com/news/aws/aws-south-america-chile-region-launch">Amazon</a></li><li><span class="date">2026-11-13</span> — An arbitrator imposed a three-year collective agreement covering Amazon&#x27;s YVR2 warehouse in Delta, British Columbia, requiring covered employees to join Unifor, with union dues of up to CA$1,064 per employee in the first year; Amazon said it will press on with its legal challenges. <span class="why">Why it matters: the first imposed union contract at an Amazon warehouse in Canada, a precedent for labour costs and organising at its logistics sites, though it covers a single facility.</span> <a href="https://www.ad-hoc-news.de/boerse/unternehmensnachrichten/amazon-s-growth-engine-meets-its-ground-game-union-ruling-water-dispute-and-a-legal-test/70507131">AD HOC NEWS</a></li><li><span class="date">2026-11-15</span> — AWS&#x27;s US-EAST-1 region suffered connectivity failures early Sunday morning, blocking sign-ins to IAM Identity Center and new AWS account sign-ups and affecting 11 services including CloudWatch and Step Functions; AWS said the authentication failures were fixed by 5:20 AM PT and the underlying network issue fully mitigated by 6:21 AM PT, with no cause given yet. <span class="why">Why it matters: the second US-EAST-1 failure in about a month after the October 20 outage, a fresh reliability test for AWS, though this one hit logins and sign-ups rather than customer workloads.</span> <a href="https://www.talkesport.com/news/gaming/aws-us-east-1-outage-fortnite-gaming-november-15/">TalkEsport (AWS Health Dashboard)</a></li>
+  
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ASML">
+    <h2>ASML — ASML Holding</h2>
+    <ul>
+    <li><span class="date">2026-11-09</span> — The U.S. Commerce Department extended the suspension of its 50% Affiliates Rule — which would widen export controls to firms majority-owned by blacklisted entities — until Jan 10, 2027; the decision was filed Nov 5 and published in the Federal Register Nov 9, leaving existing restrictions unchanged. <span class="why">Why it matters: removes the near-term Nov 10 cliff for ASML&#x27;s China sales, though the rule can return in January and a separate congressional bill could still tighten controls.</span> <a href="https://fudzilla.com/washington-gives-chinese-chip-firms-another-holiday">Fudzilla</a></li><li><span class="date">2026-11-12</span> — The MATCH Act &mdash; the U.S. bill that would press the Netherlands and Japan to align export controls with Washington&rsquo;s, potentially covering ASML&rsquo;s DUV tools &mdash; has been folded into the draft fiscal 2027 U.S. defense budget, according to a Korea Times report; the draft still awaits full Senate deliberation and House&ndash;Senate reconciliation, and one provision would exempt shipments to existing foreign-operated plants in China. <span class="why">Why it matters: the bill is now one step closer to law, with China at 23% of ASML&rsquo;s Q3 system sales, though the carve-outs could shield some of that business and the text is not final.</span> <a href="https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/asml-s-china-exposure-hinges-on-match-act-loopholes-as-buyback-programme-rolls-on/70496231">AD HOC NEWS</a></li><li><span class="date">2026-11-12</span> — OpenAI told U.S. lawmakers it supports three bipartisan chip export-control bills — the Chip Security Act, the AI Overwatch Act and the MATCH Act, which would press allies to align chip-equipment export controls with U.S. levels — and House Speaker Mike Johnson said consensus was forming around tighter curbs, with the measures possibly attached to the fiscal 2027 defense bill. <span class="why">Why it matters: a major AI customer&#x27;s backing raises the odds the MATCH Act becomes law, with China at 23% of ASML&#x27;s Q3 system sales, though none of the bills has had a floor vote and OpenAI has not published its position.</span> <a href="https://plainenglish.io/news/openai-chip-security-act-ai-overwatch-match-act">Plain English (Punchbowl News / Bloomberg)</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="AWK">
+    <h2>AWK — American Water Works</h2>
+    <ul><li><span class="date">2026-11-10</span> — Essential Utilities said on its Q3 earnings call that it still expects the American Water merger to close by the end of Q1 2027, with decisions on the North Carolina and Texas settlements expected before year-end and a recommended decision in Pennsylvania around Thanksgiving, followed by commission action after the new year. <span class="why">Why it matters: the first public timetable for the four outstanding state approvals since the Illinois clearance, keeping the Q1 2027 close on track.</span> <a href="https://www.thestockobserver.com/2026/11/10/what-essential-utilities-wtrg-said-on-its-q3-earnings-call.html">The Stock Observer</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="BR">
+    <h2>BR — Broadridge</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="BRK-A">
+    <h2>BRK-A — Berkshire Hathaway</h2>
+    <ul><li><span class="date">2026-11-10</span> — Berkshire plans its second yen-denominated bond offering of 2026, after raising &#xA5;272.3 billion in April, continuing its roughly twice-yearly access to Japan&#x27;s debt market to fund its stakes in the five Japanese trading houses, now worth $35.4 billion against a $15.4 billion cost. <span class="why">Why it matters: fresh low-cost yen funding matched against the Japanese holdings, reinforcing the trading-house strategy under new CEO Greg Abel.</span> <a href="https://www.zacks.com/stock/news/3027451/berkshire-hathaway-deepens-japan-focus-with-fresh-yen-bond-plans">Zacks</a></li><li><span class="date">2026-11-13</span> — Berkshire priced its second yen bond offering of 2026 at &#xA5;182.3 billion ($1.1 billion) in five tranches from 3 to 30 years, settling Nov 19; spreads widened versus April — the 5-year at 75 basis points over swaps (vs 70bp) and the 30-year at 105bp (vs 100bp), with coupons of 3.007%, 3.661% and 4.571%. <span class="why">Why it matters: the new funding costs more than April&#x27;s &#xA5;272.3 billion issue, and the use of proceeds — possibly more Japanese trading-house investment — remains undisclosed.</span> <a href="https://news.bloombergtax.com/business-and-practice/berkshire-pays-more-to-borrow-in-japan-on-182-billion-deal">Bloomberg Tax</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="FCX">
+    <h2>FCX — Freeport-McMoRan</h2>
+    <ul><li><span class="date">2026-11-12</span> — TDG Gold agreed to sell Freeport a 51% interest in its Aurora West gold/copper project in British Columbia for C$110 million in cash, with an earn-in option to 75% by sole-funding C$80 million of exploration plus a C$40 million payment for the remaining ClaimsCo shares; closing is expected around December 2026 after TSX Venture approval. <span class="why">Why it matters: adds a new gold/copper exploration growth option in B.C., though C$110 million is small against Freeport&#x27;s roughly $87 billion market value.</span> <a href="https://www.globenewswire.com/news-release/2026/11/12/3402091/0/en/tdg-gold-corp-agrees-to-sell-51-interest-in-aurora-west-property-to-freeport-mcmoran-mineral-properties-canada-inc-for-c-110-million-and-to-grant-certain-additional-earn-in-rights-.html">GlobeNewswire</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="FISV">
+    <h2>FISV — Fiserv</h2>
+    <ul><li><span class="date">2026-11-10</span> — Fiserv launched AI-powered eCommerce capabilities for Clover: an AI website builder, answer-engine and SEO discovery tools, built-in shipping with automated tax calculation, and online/in-store sync, available now to U.S. Clover merchants. <span class="why">Why it matters: extends Clover beyond the physical storefront into online and AI-assisted shopping, a growth lever for Merchant Solutions, though adoption among its roughly 900,000 merchants is unproven.</span> <a href="https://www.globenewswire.com/news-release/2026/11/10/3399522/0/en/clover-helps-small-businesses-get-discovered-and-sell-anywhere-in-the-age-of-ai-shopping.html">GlobeNewswire</a></li>
+  <li><span class="date">2026-11-11</span> — CEO Takis Georgakopoulos told Citi fintech analyst Bryan Keane that Fiserv expects cleaner results from Q4 as nonrecurring revenue normalizes, plans to shut down more than a dozen smaller low-growth businesses, will consolidate clients from its two debit networks onto one, and still targets $1 billion of Project Elevate savings over three years, with $500 million of Q4 buybacks planned and Clover&#x27;s Japan pilot going live in Q1 2027. <span class="why">Why it matters: the first concrete portfolio-pruning detail behind the turnaround plan, though guidance is unchanged and the overturn tests — organic revenue back to positive mid-single-digit and margin expansion from 31.8% — are still unmet.</span> <a href="https://www.americanbankingnews.com/2026/11/11/fiserv-ceo-sees-clearer-results-ahead-as-company-targets-1-billion-in-savings.html">American Banking News</a></li><li><span class="date">2026-11-12</span> — Fiserv is preparing to sell one of its two debit networks, CEO Takis Georgakopoulos said at Citi&#x27;s annual FinTech conference: the company is migrating clients onto one network over the next few quarters and will sell the other to a suitable buyer or shutter it; JPMorgan Chase, Wells Fargo, Bank of America and PNC held preliminary talks about buying a debit rail earlier this year, per the Wall Street Journal. <span class="why">Why it matters: a concrete divestiture step in the portfolio review, turning a duplicative asset into cash or a cost saving, though no buyer or price is agreed.</span> <a href="https://www.pymnts.com/business/2026/fiserv-readies-one-of-its-two-debit-networks-for-sale/">PYMNTS</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="FNMA">
+    <h2>FNMA — Fannie Mae</h2>
+    <ul><li><span class="date">2026-11-11</span> — With Democrats set to control both chambers of Congress from January, the path to ending Fannie Mae and Freddie Mac&rsquo;s conservatorship looks narrower: Rep. Maxine Waters, running to chair the House Financial Services Committee, has consistently opposed a rapid release without congressional oversight and affordable-housing safeguards, and Treasury Secretary Scott Bessent has said the ownership question may wait until 2027&ndash;28; Bill Ackman said the administration had waited until after the midterms to act. <span class="why">Why it matters: the conservatorship-exit thesis is the entire investment case for FNMA common, so a longer, more contested timeline directly reprices it.</span> <a href="https://www.realtor.com/news/real-estate-news/fannie-mae-freddie-mac-conservatorship-midterm-election-2026/">Realtor.com</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GEV">
+    <h2>GEV — GE Vernova</h2>
+    <ul>
+    <li><span class="date">2026-11-10</span> — SoftBank revised its power-generation equipment procurement plans for its U.S. AI data-center projects, including the 10 GW Pike County, Ohio campus backed by 9.2 GW of new gas generation where GE Vernova is a supplier, booking a $3.7 billion charge; SoftBank said the Ohio project remains on track with the contract being revised and denied it is defaulting on turbine orders, while GE Vernova shares fell more than 6% intraday. <span class="why">Why it matters: the first sign a major data-center developer is rethinking power-equipment orders, a direct demand test for GE Vernova&#x27;s gas-turbine backlog, though no GE Vernova order has been cancelled.</span> <a href="https://www.reuters.com/business/energy/ge-vernova-shares-slide-after-softbank-revises-us-data-center-project-plans-2026-11-10/">Reuters</a></li><li><span class="date">2026-11-10</span> — GE Vernova said its hydrogen testing facility in Greenville, South Carolina validated new capabilities for two aeroderivative gas turbines: the LM2500XPRESS package for fuel blends with up to 50% hydrogen, and the LM6000VELOX for operation on 100% hydrogen; the company says its gas-turbine fleet has logged more than 11 million operating hours on hydrogen and hydrogen-blended fuels. <span class="why">Why it matters: strengthens GE Vernova&rsquo;s low-carbon power offering as data-center and utility customers weigh hydrogen-ready generation, though it is a technology milestone, not an order.</span> <a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/ge-vernova-stock-gets-hydrogen-turbine-boost-from-greenville-tests/70492903">AD HOC NEWS</a></li><li><span class="date">2026-11-10</span> — GE Vernova will invest $34.5 million to expand transformer manufacturing in Shreveport, Louisiana, adding 175 jobs, with full production capacity in 2028; it is part of its roughly $1.3 billion U.S. manufacturing investment plan for 2025&ndash;28. <span class="why">Why it matters: adds large-power-transformer capacity into rising grid and digital-infrastructure demand, supporting the Electrification segment, though the amount is small against GE Vernova&#x27;s backlog.</span> <a href="https://www.gevernova.com/news/press-releases/ge-vernova-invest-345-million-shreveport-facility-expansion-meet-growing-grid">GE Vernova</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="GOOGL">
+    <h2>GOOGL — Alphabet</h2>
+    <ul><li><span class="date">2026-11-09</span> — Google unveiled its TPU 8tx and TPU 8i Max AI chips, saying all available TPU capacity is contracted and naming Apple, Meta and Anthropic among external customers, with Oracle planning to offer the chips next year; Bloomberg Intelligence sees related sales topping $135 billion by 2028. <span class="why">Why it matters: Google is turning its in-house AI chips into a merchant business with major external customers, a new revenue leg for Cloud, though the chips are capacity-constrained.</span> <a href="https://www.tradingview.com/news/tradingview:1d76d95eb30a2:0-key-facts-alphabet-tpus-lift-cloud-results-new-chips-gain-customers/">TradingView</a></li><li><span class="date">2026-11-10</span> — Alphabet agreed to buy about 135 million Anthropic shares for $10 billion at the IPO price, part of a $26 billion private placement alongside Nvidia&#x27;s matching $10 billion purchase; Anthropic is due to price on Nov 18 and begin trading Nov 19. <span class="why">Why it matters: a $10 billion stake in a leading AI lab, deepening Alphabet&#x27;s AI position beyond its own Gemini and TPU businesses, though the value will hinge on Anthropic&#x27;s listing and performance.</span> <a href="https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/alphabet-s-10-billion-anthropic-stake-meets-a-legal-challenge-and-a-leadership-shake-up-at-nvidia/70514268">AD HOC NEWS</a></li>
+  <li><span class="date">2026-11-12</span> — An adviser to the EU&#x27;s top court, Advocate General Juliane Kokott, told the Court of Justice it should set aside the General Court&#x27;s 2024 annulment of the European Commission&#x27;s &euro;1.49 billion AdSense antitrust fine against Google and send the case back for a fresh ruling, with the fine reduced; the opinion is non-binding and a final judgment is expected in 2027. <span class="why">Why it matters: revives a &euro;1.49 billion ($1.7 billion) antitrust exposure that had been annulled, though the fine is not automatically reinstated and would come back smaller if the court follows the advice.</span> <a href="https://www.pymnts.com/cpi-posts/google-faces-revival-of-1-7-billion-eu-antitrust-fine-after-court-opinion/">PYMNTS (Reuters)</a></li>
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ITOCY">
+    <h2>ITOCY — Itochu ADR</h2>
+    <ul><li><span class="date">2026-11-12</span> — Itochu completed its $1.95 billion acquisition of a 50% stake in Aviation Capital Group (via TC Skyward Aviation U.S.) from Tokyo Century, moving to a joint management structure after all regulatory approvals; ACG is the world&#x27;s ninth-largest aircraft lessor, with $15.5 billion of assets at Sep 30, 2026 and nine-month pre-tax income of $170 million, up 36%. <span class="why">Why it matters: closes a major bet making aircraft leasing a core growth platform for Itochu, though it is a capital-intensive, cyclical business.</span> <a href="https://avitrader.com/2026/11/12/itochu-completes-investment-in-acg/">AviTrader</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="JNJ">
+    <h2>JNJ — Johnson &amp; Johnson</h2>
+    <ul><li><span class="date">2026-11-09</span> — Johnson &amp; Johnson said its pasritamig and JNJ-9401 combination produced deep PSA reductions in early prostate-cancer data — 11 of 15 patients at the recommended regimen had PSA fall by at least 50% — and the dual-bispecific regimen is advancing into the Phase 3 KLK2-comPAS study for metastatic castration-resistant prostate cancer. <span class="why">Why it matters: a pipeline advance in a large oncology indication, though the data are from a small Phase 1 cohort and the Phase 3 result is years away.</span> <a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/johnson-johnson-stock-prostate-combo-advances-to-phase-3/70505579">AD HOC NEWS</a></li>
+  <li><span class="date">2026-11-10</span> — Johnson &amp; Johnson said CAPLYTA (lumateperone) met its primary and key secondary endpoints in a second pivotal Phase 3 study in bipolar mania, improving manic symptoms versus placebo as early as Day 3 with a safety profile consistent with prior studies; the two positive Phase 3 studies will support a planned FDA submission for the new indication. <span class="why">Why it matters: a second positive Phase 3 result that could extend CAPLYTA from bipolar depression into bipolar mania, though the FDA submission is still to come.</span> <a href="https://www.quantisnow.com/company/JNJ">Quantisnow (PRNewswire)</a></li><li><span class="date">2026-11-15</span> — The Financial Times reported Johnson &amp; Johnson could announce as soon as Monday a deal to buy Texas biotech Ollin Biosciences for up to $3.4 billion — $2.2 billion in cash upfront plus $1.2 billion in milestone payments — for its experimental eye-disease drug OLN324, now in late-stage studies for diabetic macular edema and wet age-related macular degeneration; Reuters could not immediately verify the report and neither company commented. <span class="why">Why it matters: a sizeable bolt-on for J&amp;J&#x27;s ophthalmology pipeline if confirmed, though the deal is still only reported, not announced.</span> <a href="https://wixx.com/2026/11/15/jj-looks-to-buy-ollin-biosciences-for-up-to-3-4-billion-ft-says/">Reuters (Financial Times)</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="MP">
+    <h2>MP — MP Materials</h2>
+    <ul>
+    <li><span class="date">2026-11-09</span> — MP Materials CFO Ryan Corbett said at the D.A. Davidson Critical Minerals Conference that MP expects to produce 5,000–6,000 metric tons of NdPr in 2027, with production costs falling as output rises and the first train of its chlor-alkali facility comes online early in 2027; he said magnet deliveries after GM qualification will be &#x27;quite modest&#x27; for the next couple of quarters as customers introduce magnets across products and plants. <span class="why">Why it matters: the first 2027 production range since the Q3 print, framing the ramp and the cost path for the magnet business, while tempering near-term magnet revenue expectations.</span> <a href="https://www.themarketsdaily.com/2026/11/09/mp-materials-sees-lower-rare-earth-costs-as-output-rises-despite-planned-2027-downtime.html">The Markets Daily</a></li><li><span class="date">2026-11-09</span> — China extended the suspension of its October 2025 rare-earth export controls to Jan 10, 2027 (MOFCOM Announcement No. 58 of 2026), so the controls do not resume on Nov 10 as scheduled; the April 2025 licence requirements for seven medium and heavy rare earths remain in force. <span class="why">Why it matters: removes the Nov 10 cliff for ex-China supply and for MP&#x27;s pricing, though the suspension is only a two-month extension and the controls can return in January.</span> <a href="https://www.dollarstockclub.com/2026/11/10/china-kept-rare-earth-controls-alive-apec-looms/">Dollar Stock Club</a></li>
+  <li><span class="date">2026-11-11</span> — CEO Jim Litinsky said at the Baird Global Industrial Conference that MP has qualified rare-earth magnets for General Motors and is ramping production, plans to bring Apple online as a customer next year &mdash; Apple has agreed to buy at least $500 million of magnets from the Independence facility &mdash; and that the Pentagon has contracted for 100% of the planned 10X magnet production; he said the rare-earth oxide run rate is above 50,000 tons and moving toward 60,000 tons, and that robotics magnet inquiries already exceed planned 10X output. <span class="why">Why it matters: the first detail on the magnet customer ramp since the Q3 print &mdash; GM qualified, Apple next, Pentagon offtake locked &mdash; the core of the speculative case, though large-scale robotics demand is still years out.</span> <a href="https://www.marketbeat.com/instant-alerts/event-mp-materials-clears-gm-magnet-milestone-targets-apple-as-next-customer-2026-11-11/">MarketBeat</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="NFLX">
+    <h2>NFLX — Netflix</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="UNP">
+    <h2>UNP — Union Pacific</h2>
+    <ul><li><span class="date">2026-11-10</span> — The town of Rossville, Tenn., asked the Surface Transportation Board to require Union Pacific to keep Norfolk Southern&#x27;s Memphis-area intermodal terminal open for at least five years after the merger, arguing the operating plan&#x27;s closure of the terminal would push containers across the Mississippi and raise truck traffic at UP&#x27;s Marion, Ark., terminal by 57%. <span class="why">Why it matters: one more conditions request in the merger docket ahead of the Nov 18 comment deadline, though a single town&#x27;s filing is unlikely to decide the merger&#x27;s terms.</span> <a href="https://www.trains.com/pro/freight/class-i/memphis-area-town-asks-stb-to-require-up-to-keep-ns-intermodal-terminal-open/">Trains</a></li><li><span class="date">2026-11-12</span> — Union Pacific collected $131.8 million more in fuel surcharges than it paid for fuel in Q3, adding 15 cents a share to earnings, after a $91.1 million excess in Q2; BNSF&#x27;s surcharge collections lagged its fuel costs by $922.4 million over the first nine months of 2026, and UP&#x27;s November surcharge is 84 cents a mile versus BNSF&#x27;s 61 cents. <span class="why">Why it matters: shows UP pricing power directly lifting margins, and the surcharge gap is now part of the merger debate, with BNSF arguing the UP&ndash;Norfolk Southern deal would undermine competition.</span> <a href="https://www.reuters.com/business/energy/union-pacific-turns-fuel-surcharges-into-profits-rivals-lag-2026-11-12/">Reuters</a></li><li><span class="date">2026-11-13</span> — The Surface Transportation Board reopened the participation window for the Union Pacific&ndash;Norfolk Southern merger review after raising serious concerns that CEO Jim Vena&#x27;s March remarks to shippers may have discouraged opposition, ordering Union Pacific to release the recording and provide sworn statements; Canadian Pacific Kansas City separately asked the board to terminate the review, and farm groups filed objections Nov 11&ndash;13, with comments due Nov 18. <span class="why">Why it matters: the regulator&#x27;s intervention keeps the merger&#x27;s approval in doubt and adds a new procedural risk, with the review now running at least into mid-2027.</span> <a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/union-pacific-stock-merger-review-faces-fresh-participation-test/70505684">AD HOC NEWS</a></li>
+  
+  
+    </ul>
+  </section>
+  <section class="card" data-company="WMT">
+    <h2>WMT — Walmart</h2>
+    <ul><li><span class="date">2026-11-12</span> — Walmart confirmed it will release Q3 fiscal 2027 results at 6:00 a.m. CST on Thursday, Nov 19, with a conference call at 7:00 a.m. CST hosted by CEO John Furner and CFO John David Rainey; management&#x27;s Q3 guidance from August is adjusted EPS of $0.62&ndash;$0.64 and operating-income growth of 2&ndash;4%. <span class="why">Why it matters: fixes the date and time of the next material catalyst, against a low bar set by the tariff-refund reinvestment in lower prices.</span> <a href="https://www.businesswire.com/news/home/20261112737102/en/Walmart-To-Host-Third-Quarter-Earnings-Conference-Call-November-19-2026">Business Wire</a></li>
+  
+  </ul>
+  </section>
+
+  <footer>
+    Source window: November 9&ndash;November 16, 2026. This file is replaced in full every run of the daily feed.
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
+    var cards = document.querySelectorAll("section.card");
+    function apply() {
+      var value = select.value;
+      var q = (search.value || "").toLowerCase();
+      cards.forEach(function (card) {
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
+      });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
+  })();
+</script>
+</body>
+</html>
