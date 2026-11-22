@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company News — Valuation &amp; Future Prospects</title>
+<style>  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+  header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+  .meta{color:#6b7280;font-size:15px;margin:0}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h2{font-size:20px;line-height:1.3;margin:0 0 10px}
+  ul{margin:6px 0 12px;padding-left:22px}
+  li{margin:10px 0}
+  .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  a{color:#0b5cab;font-weight:600;text-decoration:none}
+  section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
+  .note{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
+  @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
+  @media (prefers-color-scheme:dark){
+    body{background:#000;color:#f2f2f7}
+    header,section.card,a.card,.filter,.note{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
+    .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
+    .date{background:#14331f;color:#a7f3c8}
+    .why{color:#b0b3b8}
+    a{color:#7fb3ff}
+    section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
+  }</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="home"><a href="../../index.html">&larr; Back to home</a></p>
+    <header>
+    <h1>Company News — Valuation &amp; Future Prospects</h1>
+    <p class="meta">Last updated: Sunday, November 22, 2026, 7:00 AM ET &middot; News list: 17 companies &middot; Window: November 15&ndash;November 22, 2026</p>
+  </header>
+  <div class="note">
+    <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
+  </div>
+  <div class="filter">
+  <label for="companyFilter">Choose a company</label>
+  <select id="companyFilter" aria-label="Choose a company">
+    <option value="all">All companies</option>
+    <option value="upcoming">Upcoming in the next week</option>
+    <option value="AAPL">AAPL — Apple</option>
+    <option value="AMZN">AMZN — Amazon</option>
+    <option value="ASML">ASML — ASML Holding</option>
+    <option value="AWK">AWK — American Water Works</option>
+    <option value="BR">BR — Broadridge</option>
+    <option value="BRK-A">BRK-A — Berkshire Hathaway</option>
+    <option value="FCX">FCX — Freeport-McMoRan</option>
+    <option value="FISV">FISV — Fiserv</option>
+    <option value="FNMA">FNMA — Fannie Mae</option>
+    <option value="GEV">GEV — GE Vernova</option>
+    <option value="GOOGL">GOOGL — Alphabet</option>
+    <option value="ITOCY">ITOCY — Itochu ADR</option>
+    <option value="JNJ">JNJ — Johnson & Johnson</option>
+    <option value="MP">MP — MP Materials</option>
+    <option value="NFLX">NFLX — Netflix</option>
+    <option value="UNP">UNP — Union Pacific</option>
+    <option value="WMT">WMT — Walmart</option>
+  </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
+</div>
+  <section class="card" data-company="upcoming">
+    <h2>Upcoming in the next week</h2>
+    <ul>
+    <li><span class="date">Wed, Nov 25, 2026</span> — Netflix airs the NFL&rsquo;s first Thanksgiving Eve game (Packers vs Rams), followed by a Christmas Day doubleheader. <a href="https://www.nasdaq.com/articles/netflix-lowers-2026-ad-revenue-forecast-time-hold-stock">Nasdaq</a></li><li><span class="date">Tue, Nov 24, 2026</span> — Netflix is expected to acquire the 55-acre Radford Studio Center in Studio City through a foreclosure auction, at a steep discount to what the previous owner paid; the deal is reportedly valued above $400 million. <a href="https://quantli.com/news/netflix-q3-revenue-rises-nearly-12-to-129-billion-as-margins-expand-ZtW0oDg4xUmDQzx_6K4sag">Quantli</a></li>
+    <li><span class="date">Fri, Nov 27, 2026</span> — Surface Transportation Board deadline (noon ET) for comments on the completeness of the responsive applications in the Union Pacific&ndash;Norfolk Southern merger review (Docket FD 36873); replies due Dec 1, and DOJ/DOT comments due Dec 3. <a href="https://www.stb.gov/resources/major-railroad-mergers/">STB</a></li>
+    
+  </ul>
+  </section>
+  <section class="card" data-company="AAPL">
+    <h2>AAPL — Apple</h2>
+    <ul><li><span class="date">2026-11-16</span> — Apple announced it will impose daily usage limits on Siri AI and other Apple Intelligence features that rely on powerful server models starting with iOS 27.3, expected in December, but increased access will be included with most iCloud+ plans at no additional cost in most countries, with the UK as a notable exception. <span class="why">Why it matters: the first move to meter AI usage and bundle the extra capacity into paid iCloud+ plans, a services-monetisation step for Apple Intelligence, though the limits are described as generous and the UK is excluded.</span> <a href="https://www.macrumors.com/2026/11/17/ios-27-3-new-icloud-plus-perk/">MacRumors</a></li><li><span class="date">2026-11-17</span> — Apple services including iCloud sign-in, the App Store, Apple Pay and Apple Music were down for several hours after an internal update; Apple said it was not a cyberattack and services were restored by that evening. <span class="why">Why it matters: a hours-long outage across iCloud, the App Store and Apple Pay tests Services reliability and trust, though it was fixed the same day with no breach claimed.</span> <a href="https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/">9to5Mac</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AMZN">
+    <h2>AMZN — Amazon</h2>
+    <ul><li><span class="date">2026-11-17</span> — Blackstone Digital Infrastructure Trust agreed to buy a 75% stake in two Amazon Web Services joint ventures holding 13 newly built data halls with 647 MW of capacity across campuses in northern Indiana and Mississippi, in a deal valued at about $5 billion; AWS keeps 25% and will lease the portfolio back for an initial 12 years on a triple-net basis at a 7.0% capitalisation rate, with closing expected in Q4 2026. <span class="why">Why it matters: a major capital-recycling move that brings outside money into AWS&#x27;s physical footprint as AI buildout costs mount — Amazon generated $168.3 billion of operating cash flow over the last twelve months but spent more on property and equipment, leaving a $42.4 billion free-cash-flow deficit — though AWS still bears the lease cost.</span> <a href="https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/amazon-offloads-data-center-stakes-to-blackstone-as-capital-demands-mount/70524116">AD HOC NEWS (The Register)</a></li><li><span class="date">2026-11-19</span> — Anthropic priced its IPO at $83 a share, above the $70&ndash;$78 range, selling about 980 million shares and raising about $81.3 billion, and begins trading on Nasdaq as ANT today; at $83, Amazon&rsquo;s roughly 14.7% stake would be worth about $158 billion by the filing math. Anthropic&rsquo;s shares opened at $111.50 on Nov 19, 34% above the $83 price, and closed at $97.17, up 17.1% on the day. On Nov 20 the shares fell 8.5% to $88.91, with an intraday low of $83.05, just above the $83 IPO price. <span class="why">Why it matters: an above-range pricing lifts the marked value of Amazon&rsquo;s Anthropic holding at first trade.</span> <a href="https://vandatateam.com/blog/who-owns-anthropic">Vanda Team</a></li><li><span class="date">2026-11-20</span> — President Donald Trump said at a White House briefing that the U.S. would impose a &ldquo;tremendous tax&rdquo; on American companies that build AI data centers overseas, naming Amazon, Google and Microsoft and singling out Google&rsquo;s planned data center in Finland; no tax rate, enforcement date or legal mechanism was given, and no executive order or bill has been published. <span class="why">Why it matters: a presidential threat aimed squarely at the hyperscalers&rsquo; overseas AI buildout, including AWS&rsquo;s international data-center plans, though with no mechanism it is a statement of intent, not policy yet.</span> <a href="https://www.tradingview.com/news/benzinga:790a9bff6094b:0-trump-has-a-message-for-big-tech-firms-like-amazon-google-and-microsoft-building-data-centers-abroad-we-re-going-to-put-a-tremendous-tax-on-them/">Benzinga (via TradingView)</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ASML">
+    <h2>ASML — ASML Holding</h2>
+    <ul><li><span class="date">2026-11-16</span> — The U.S. Commerce Department&#x27;s Bureau of Industry and Security issued an interim final rule (RIN 0694-AK50) requiring licences for advanced AI chips shipped to data centres anywhere in the world that rent more than 12 million TPP of computing power to companies headquartered in China or other D:5 countries, and for advanced chip exports to Singapore, Malaysia, Thailand, Indonesia and Brazil; existing operators have 90 days to obtain licences, the rule takes effect on Federal Register publication, and it formally rescinds the Biden-era AI Diffusion Rule. <span class="why">Why it matters: the first new export-control tightening aimed at remote access to AI compute, directly relevant to ASML&#x27;s China business (23% of Q3 system sales), though licences may still be granted and the rule is not yet in force.</span> <a href="https://www.nextgov.com/artificial-intelligence/2026/11/commerce-department-moves-close-ai-chip-loophole/417255/">Nextgov</a></li><li><span class="date">2026-11-17</span> — China&rsquo;s minister-counsellor in Madrid told Reuters that longstanding Dutch limits on ASML exports to China are casting a shadow over EU-China industrial-policy talks and China could limit sharing of its technology; ASML declined to comment. <span class="why">Why it matters: the export-control dispute is spilling into broader EU-China trade relations, raising policy risk for ASML&rsquo;s China business.</span> <a href="https://935thelloyd.com/2026/11/17/chinese-envoy-says-chip-equipment-export-curbs-threaten-eu-china-trade-thaw/">935 The Lloyd</a></li><li><span class="date">2026-11-18</span> — The Dutch government formally rejected the U.S. MATCH Act, which would press allies to align DUV export restrictions with U.S. levels within 150 days or face unilateral U.S. enforcement; the Netherlands called the bill&rsquo;s extraterritorial reach unacceptable, per POLITICO. <span class="why">Why it matters: political cover for ASML&rsquo;s China business &mdash; about a third of revenue &mdash; though the bill could still advance in the U.S. defense bill and the separate BIS licensing rule stands.</span> <a href="https://ioplus.nl/en/posts/dutch-reject-us-match-act-over-asml-export-controls">IO+</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="AWK">
+    <h2>AWK — American Water Works</h2>
+    <ul><li><span class="date">2026-11-16</span> — Settling parties asked the New Jersey Board of Public Utilities to approve an uncontested settlement for the Essential Utilities merger at a meeting scheduled for Nov 20; Illinois approved on Nov 6, the fourth state approval, with Pennsylvania, North Carolina, Texas and New Jersey still pending and close targeted by end-Q1 2027. <span class="why">Why it matters: New Jersey is American Water&rsquo;s home state and a key remaining regulatory gate for the transformational merger.</span> <a href="https://equityswarm.com/stocks/company/awk/bofa-lifts-american-water-price-target-to-157-as-essential-utilities-merger-nears-key-new-jersey-review/">EquitySwarm</a></li><li><span class="date">2026-11-18</span> — Pennsylvania American Water completed its $32.8 million acquisition of the Indian Creek Valley Water Authority water system, adding about 2,600 water connections in Fayette and Westmoreland counties, Pennsylvania; about $9 million of improvements are planned over five years, with no rate increase on takeover. <span class="why">Why it matters: a small tuck-in adding regulated rate base and connections, in line with American Water&rsquo;s acquisition-led growth.</span> <a href="https://www.prnewswire.com/news-releases/pennsylvania-american-water-completes-acquisition-of-the-indian-creek-valley-water-authority-water-system-302944529.html">PR Newswire</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="BR">
+    <h2>BR — Broadridge</h2>
+    <ul><li><span class="date">2026-11-16</span> — Coinbase and Broadridge introduced the Onchain Rights Standard, an open framework for delivering shareholder communications and corporate actions to wallets holding tokenized stocks, submitted as an Ethereum Improvement Proposal; Broadridge launched a supporting data oracle to verify distribution, with on-chain proxy voting as the next phase. <span class="why">Why it matters: extends Broadridge&#x27;s governance platform into tokenized equities alongside its NYSE tokenized-securities work, a new leg for its digital-asset business, though it is an open standard at an early stage with no revenue attached yet.</span> <a href="https://crypto-economy.com/coinbase-and-broadridge-introduce-voting-rights-for-tokenized-stocks/">Crypto Economy</a></li><li><span class="date">2026-11-17</span> — Talos, Marex and Broadridge announced a collaboration to enable institutional trading and financing of DTCC-tokenized securities and collateral mobilisation beyond market hours, supporting the DTCC Tokenization Service launched Oct 28; the initial focus is financing tokenized U.S. Treasuries, with Marex as prime broker, Talos on execution and Broadridge&rsquo;s DLX for on-chain settlement. <span class="why">Why it matters: extends Broadridge&rsquo;s tokenized-finance platform into institutional trading and after-hours financing, though no financial terms, volumes or revenue were disclosed.</span> <a href="https://smartfinancereview.net/press-releases/talos-marex-and-broadridge-to-enable-institutional-trading-of-dtcc-tokenized-securities">Smart Finance Review</a></li><li><span class="date">2026-11-19</span> — Broadridge was named a Leader in Everest Group&rsquo;s inaugural BFS Agentic Business Operations PEAK Matrix Assessment 2026, covering its agentic AI work in post-trade operations, including email and message management, books of records processing and exception processing. <span class="why">Why it matters: third-party validation of Broadridge&rsquo;s agentic-AI post-trade offering, a leg of its digital-asset and automation story, though the release carries no revenue, earnings or contract figures.</span> <a href="https://www.prnewswire.com/news-releases/broadridge-named-leader-in-inaugural-everest-group-bfs-agentic-business-operations-peak-matrix-assessment-2026-302944717.html">PR Newswire</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="BRK-A">
+    <h2>BRK-A — Berkshire Hathaway</h2>
+    <ul><li><span class="date">2026-11-16</span> — Warren Buffett donated about $5.5 billion of Berkshire Hathaway stock — 9,225,000 Class B shares, converted from 6,150 Class A shares — to four family foundations: 3,690,000 shares to the Susan Thompson Buffett Foundation and 1,845,000 each to the Sherwood Foundation, the Howard G. Buffett Foundation and the NoVo Foundation; it is roughly four times last year&#x27;s gift, the first since he stepped down as chairman, and he reiterated his goal of giving away all his Berkshire shares by the end of 2034, after which he still owns 182,140 Class A shares and 1,162 Class B shares. <span class="why">Why it matters: a sharp acceleration of the give-away plan that has now topped $29 billion in total, with the Gates Foundation left off the list for the second time this year, though the gift comes from Buffett&#x27;s personal holdings and does not change Berkshire&#x27;s operations.</span> <a href="https://www.philanthropy.com/news/warren-buffett-gives-about-5-5-billion-to-his-familys-foundations/">Philanthropy.com</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="FCX">
+    <h2>FCX — Freeport-McMoRan</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FISV">
+    <h2>FISV — Fiserv</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FNMA">
+    <h2>FNMA — Fannie Mae</h2>
+    <ul><li><span class="date">2026-11-16</span> — Bill Ackman said in a letter to Pershing Square Holdings shareholders that Fannie Mae and Freddie Mac can be relisted on the NYSE and released from conservatorship before the end of President Trump&#x27;s second term, arguing the President can do it by executive authority without Congress, even after Democrats won both chambers in the midterms; Treasury Secretary Scott Bessent has said the ownership question may wait until 2027&ndash;28. <span class="why">Why it matters: the most prominent GSE shareholder restating the executive-action path to release, against the narrower congressional path flagged Nov 11, though it is one investor&#x27;s view and the timeline is still contested.</span> <a href="https://www.housingwire.com/articles/ackman-fannie-freddie-conservatorship-relisting-trump/">HousingWire</a></li><li><span class="date">2026-11-16</span> — The push to privatize Fannie Mae and Freddie Mac is reported stalled or dead for the foreseeable future, with a roughly $328 billion capital gap &mdash; Fannie needs about $187 billion and Freddie about $141 billion &mdash; and the proposed $30 billion preferred-share sale seen as generally unfeasible; Mizuho cut its odds of privatization by 2028. <span class="why">Why it matters: capital and mortgage-rate constraints, not just politics, are the binding issue for the release thesis behind FNMA common.</span> <a href="https://www.creditandcollectionnews.com/fannie-and-freddie-privatization-stalls-on-328b-capital-gap/">Credit and Collection News</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GEV">
+    <h2>GEV — GE Vernova</h2>
+    <ul><li><span class="date">2026-11-17</span> — GE Vernova signed an agreement with wpd to supply four 5.5 MW-158m onshore turbines for the Haseloff wind farm in Germany, including a long-term service agreement; delivery starts November 2027 and commissioning is planned for Q1 2028, with the order booked in Q4 2026. <span class="why">Why it matters: a small but concrete Onshore Wind order plus recurring service revenue.</span> <a href="https://www.gevernova.com/news/press-releases/ge-vernova-strengthens-german-wind-energy-expansion-new-order-wpd">GE Vernova</a></li><li><span class="date">2026-11-17</span> — GE Vernova launched the HYpact-145g, a 145 kV, 40 kA SF6-free hybrid compact switchgear that cuts substation footprint by 50% or more versus conventional air-insulated substations, using g3 gas; it will be made in Kassel, Germany, and is available to order now. <span class="why">Why it matters: expands the GRiDEA grid portfolio for AI/data-centre grid bottlenecks with an SF6-free product.</span> <a href="https://www.gevernova.com/news/press-releases/ge-vernova-launches-sf6-free-compact-switchgear-space-constrained-high-voltage">GE Vernova</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="GOOGL">
+    <h2>GOOGL — Alphabet</h2>
+    <ul><li><span class="date">2026-11-19</span> — Anthropic priced its IPO at $83 a share, above the $70&ndash;$78 range, and begins trading on Nasdaq as ANT today; Google will hold about 13.7% after the listing, mostly in non-voting shares. Anthropic&rsquo;s shares opened at $111.50 and closed at $97.17 on Nov 19, up 17.1% on the day; at the $83 price Google&rsquo;s roughly 1.8 billion shares would be worth about $147 billion. On Nov 20 the shares fell 8.5% to $88.91, with an intraday low of $83.05. <span class="why">Why it matters: a strong first trade would mark Alphabet&rsquo;s Anthropic stake up from the IPO price, alongside its Cloud/TPU relationship with Anthropic.</span> <a href="https://vandatateam.com/blog/who-owns-anthropic">Vanda Team</a></li><li><span class="date">2026-11-20</span> — Alphabet plans to raise C$6 billion (about $4.19 billion) through a multi-tranche offering of unsecured notes in the Canadian market, for general corporate purposes including repaying existing debt; the pricing terms were released Nov 20. <span class="why">Why it matters: new funding capacity for Alphabet&rsquo;s heavy AI infrastructure spending, though the raise is modest next to its capex program.</span> <a href="https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/">Reuters</a></li><li><span class="date">2026-11-20</span> — President Donald Trump said at a White House briefing that the U.S. would impose a &ldquo;tremendous tax&rdquo; on American companies that build AI data centers overseas, naming Amazon, Google and Microsoft and singling out Google&rsquo;s planned data center in Finland; no tax rate, enforcement date or legal mechanism was given, and no executive order or bill has been published. <span class="why">Why it matters: Google was the named example — its Finland data-center plans were criticised directly — so any such tax would bear on Google Cloud&rsquo;s overseas expansion, though it remains only a threat with no rate or mechanism.</span> <a href="https://www.tradingview.com/news/benzinga:790a9bff6094b:0-trump-has-a-message-for-big-tech-firms-like-amazon-google-and-microsoft-building-data-centers-abroad-we-re-going-to-put-a-tremendous-tax-on-them/">Benzinga (via TradingView)</a></li>
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ITOCY">
+    <h2>ITOCY — Itochu ADR</h2>
+    <ul><li><span class="date">2026-11-18</span> — Itochu announced two new investments: a minority stake in IAG Engine Tech SL, an aircraft-engine maintenance, repair and overhaul business established by Iberia in 2026 — Itochu&rsquo;s first investment in the narrow-body engine MRO business — and an investment alongside Mercuria in Capital Ship Co, the holding company of Smart Technologies &amp; Resources, a duty-free systems provider using AI to help retailers manage tax refunds. <span class="why">Why it matters: two small but strategic entries into aviation services and travel-retail technology, extending Itochu&rsquo;s industrial portfolio, though no deal sizes were disclosed.</span> <a href="https://www.ii.co.uk/news/itochu-invests-in-iag-engine-tech-and-smart-technologies-al1793163109493819800">Interactive Investor (Alliance News)</a></li>
+  
+  </ul>
+  </section>
+  <section class="card" data-company="JNJ">
+    <h2>JNJ — Johnson & Johnson</h2>
+    <ul><li><span class="date">2026-11-16</span> — Johnson &amp; Johnson announced a definitive agreement to acquire Ollin Biosciences for $2.2 billion upfront plus up to about $1.125 billion in regulatory and commercial milestone payments, adding OLN324, a Phase 3 bispecific antibody for wet age-related macular degeneration and diabetic macular edema; Blackstone Life Sciences will pay $750 million over multiple years to fully fund OLN324&#x27;s Phase 3 development, and the deal is expected to close before the end of 2026. <span class="why">Why it matters: confirms the reported deal at the FT&#x27;s terms with development costs largely offloaded to Blackstone, a sizeable bolt-on for J&amp;J&#x27;s ophthalmology pipeline, though OLN324 is still investigational.</span> <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-to-acquire-ollin-biosciences-and-late-stage-bispecific-antibody-with-best-in-class-potential-in-ophthalmology">Johnson &amp; Johnson</a></li><li><span class="date">2026-11-19</span> — Johnson &amp; Johnson submitted a supplemental New Drug Application to the U.S. FDA seeking approval of CAPLYTA (lumateperone) for manic or mixed episodes associated with bipolar I disorder in adults, supported by two pivotal Phase 3 studies in which symptoms improved significantly versus placebo as early as Day 3 and through Week 3; approval would make bipolar mania the fifth approved use for CAPLYTA. <span class="why">Why it matters: a label expansion for a growing neuroscience franchise, though approval is not assured and the indication adds to an already-approved drug rather than a new launch.</span> <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-seeks-u-s-fda-approval-for-caplyta-in-bipolar-mania-marking-fifth-potential-indication">Johnson &amp; Johnson</a></li><li><span class="date">2026-11-20</span> — Johnson &amp; Johnson announced late-breaking Phase 4 STAR study results for TREMFYA (guselkumab) in biologic-na&iuml;ve adults with psoriatic arthritis and axial involvement: the drug met its primary and major secondary endpoints, with more than twice the reduction in MRI-assessed sacroiliac-joint inflammation versus placebo at Week 24 (SPARCC &minus;7.1 and &minus;5.2 vs &minus;2.4) and no new safety signals. <span class="why">Why it matters: the first dedicated randomised trial of an IL-23 inhibitor in MRI-confirmed axial psoriatic arthritis, strengthening TREMFYA&rsquo;s differentiation in a competitive immunology market, though it is not yet a label change or approval.</span> <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-data-in-psoriatic-arthritis-psa-shows-tremfya-guselkumab-is-the-only-advanced-therapy-to-demonstrate-mri-confirmed-improvements-in-spinal-pain-and-stiffness">Johnson &amp; Johnson</a></li>
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="MP">
+    <h2>MP — MP Materials</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="NFLX">
+    <h2>NFLX — Netflix</h2>
+    <ul><li><span class="date">2026-11-17</span> — Netflix Games cut an undisclosed number of jobs during a restructuring reported Nov 17, as the team changes how it approaches game development; the company said its wider gaming strategy is unchanged and it continues to invest, hire and launch titles. <span class="why">Why it matters: a strategic reset in a small games unit that has yet to prove its model, though the headcount and cost impact are undisclosed.</span> <a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/netflix-stock-games-unit-cuts-add-to-strategic-reset/70536905">AD HOC NEWS (The Verge)</a></li><li><span class="date">2026-11-19</span> — Netflix is reportedly among the companies pursuing media rights to the 2030 men&rsquo;s FIFA World Cup, according to CNBC, competing with Amazon and Fox for one of the biggest events in global sports; no agreement has been reached and no terms or outcome were disclosed. <span class="why">Why it matters: a World Cup deal would be Netflix&rsquo;s biggest live-sports commitment yet and a major content-cost decision, though it is only a bidding process at this stage.</span> <a href="https://equityswarm.com/stocks/company/nflx/netflix-reportedly-enters-race-for-2030-world-cup-rights-as-nflx-closes-at-58-46/">EquitySwarm (CNBC)</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="UNP">
+    <h2>UNP — Union Pacific</h2>
+    <ul><li><span class="date">2026-11-19</span> — A coalition of 21 state attorneys general, led by Pennsylvania&rsquo;s Dave Sunday, and joint shipper associations (chemical, fertilizer and petroleum groups) filed comments with the Surface Transportation Board urging it to reject the Union Pacific&ndash;Norfolk Southern merger, arguing its harms outweigh its benefits and that no conditions can sufficiently mitigate them; Union Pacific and Norfolk Southern filed a response opposing Canadian Pacific Kansas City&rsquo;s request to end the review, and CEO Jim Vena apologized for his March remarks about raising rates on merger opponents. <span class="why">Why it matters: organised state and shipper opposition at the Nov 18 comment deadline raises regulatory risk for the transformational merger; DOJ/DOT comments are due Dec 3, replies Feb 16, 2027, and a decision is expected by Aug 2027.</span> <a href="https://www.attorneygeneral.gov/taking-action/ag-sunday-joins-comment-letter-urging-feds-to-reject-proposed-union-pacific-norfolk-southern-merger-that-will-increase-costs-cut-services-and-workforces/">PA Attorney General</a></li><li><span class="date">2026-11-20</span> — The Brotherhood of Locomotive Engineers and Trainmen won a $98.8 million arbitration award against Union Pacific: a Special Board of Adjustment ruled the railroad failed to implement a negotiated &ldquo;11/4&rdquo; consistent-scheduling work rule (11 days on, 4 off) for the period June 30, 2024 to January 27, 2025, and Union Pacific must calculate the payments owed within 30 days. <span class="why">Why it matters: a roughly $99 million one-off labour cost and a sign of strained union relations as the Norfolk Southern merger review proceeds; the award covers a benefit period that ended in January 2025.</span> <a href="https://www.reuters.com/business/world-at-work/union-pacific-engineers-union-wins-nearly-100-million-schedule-rule-violation-2026-11-20/">Reuters</a></li><li><span class="date">2026-11-20</span> — Four rail labor organizations — the SMART Transportation Division, the National Conference of Firemen and Oilers, the International Brotherhood of Boilermakers and SMART&rsquo;s Mechanical Division — filed joint comments urging the Surface Transportation Board to approve the Union Pacific&ndash;Norfolk Southern merger, each having secured &ldquo;Jobs for Life&rdquo; employment agreements with the railroads; Canadian National separately filed proposed conditions with the STB aimed at preserving competition in Midwest markets. <span class="why">Why it matters: organised labour support with binding job guarantees is the strongest pro-merger voice yet in the review, countering the political and shipper opposition filed by the Nov 18 deadline; a decision is not expected before the second half of 2027.</span> <a href="https://www.freightwaves.com/news/union-pacific-norfolk-southern-merger-draws-labor-support-shipper-concerns">FreightWaves</a></li>
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="WMT">
+    <h2>WMT — Walmart</h2>
+    <ul><li><span class="date">2026-11-16</span> — Walmart appointed Joseph (Joe) E. Creed, chairman and chief executive officer of Caterpillar, to its Board of Directors, effective immediately; he will serve on the Audit Committee and the Strategic Planning and Finance Committee, with Walmart citing his experience in finance, operations and applying AI and automation. <span class="why">Why it matters: adds a sitting industrial CEO with AI-and-automation operating experience to the board days before Q3 results, though a single board seat does not change strategy.</span> <a href="https://www.businesswire.com/news/home/20261116910764/en/Walmart-Names-Joe-Creed-to-Board-of-Directors">Business Wire</a></li><li><span class="date">2026-11-19</span> — Walmart reported Q3 fiscal 2027 results: revenue rose 5.2% to $188.8 billion, ahead of the $187.4 billion expected, adjusted EPS was $0.65 versus $0.64 expected, U.S. e-commerce sales rose 23% and global e-commerce 17%; the company raised its full-year outlook for a third time this year, to net sales growth of 4.9%&ndash;5.2% (from 4%&ndash;5%) and adjusted EPS of $2.84&ndash;$2.89 (from $2.80&ndash;$2.87), though the sales outlook remains below analysts&rsquo; 5.5% expectation. <span class="why">Why it matters: a beat-and-raise into the holiday quarter led by digital and membership economics, though U.S. comparable sales of 2.9% matched estimates and the raised sales guide still trails the Street.</span> <a href="https://www.reuters.com/business/walmart-raises-forecasts-ahead-holidays-warns-rising-fuel-costs-2026-11-19/">Reuters</a></li>
+  
+  </ul>
+  </section>
+  <footer>
+    Source window: November 15&ndash;November 22, 2026. This file is replaced in full every run of the daily feed.
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
+    var cards = document.querySelectorAll("section.card");
+    function apply() {
+      var value = select.value;
+      var q = (search.value || "").toLowerCase();
+      cards.forEach(function (card) {
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
+      });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
+  })();
+</script>
+</body>
+</html>
