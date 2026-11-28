@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company News — Valuation &amp; Future Prospects</title>
+<style>  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:#f2f2f7;color:#1c1c1e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+  header{background:#fff;border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+  .meta{color:#6b7280;font-size:15px;margin:0}
+  .home{margin:0 0 12px}
+  .home a{display:inline-block;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#fff;font-size:15px}
+  a.card{display:block;background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);color:#1c1c1e;text-decoration:none}
+  a.card strong{display:block;font-size:20px;color:#0b5cab}
+  a.card span{color:#6b7280;font-size:15.5px}
+  section.card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  h2{font-size:20px;line-height:1.3;margin:0 0 10px}
+  ul{margin:6px 0 12px;padding-left:22px}
+  li{margin:10px 0}
+  .date{display:inline-block;background:#e6f4ea;color:#14532d;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .why{color:#55565a;font-size:15.5px}
+  .none{color:#6b7280;font-size:16px;margin:0 0 12px}
+  a{color:#0b5cab;font-weight:600;text-decoration:none}
+  section.card a{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid #c7d9f5;border-radius:999px;background:#f4f8ff;font-size:15px}
+  .filter{background:#fff;border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filter label{display:block;font-weight:700;margin-bottom:8px}
+  .filter select,.filter input{width:100%;font:inherit;font-size:17px;padding:12px;border:1px solid #c7d9f5;border-radius:12px;background:#f4f8ff;color:#1c1c1e;margin-bottom:10px}
+  .note{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  footer{color:#6b7280;font-size:13.5px;line-height:1.5;padding:8px 4px 0}
+  @media (min-width:700px){.wrap{padding:28px 20px 48px} h1{font-size:32px}}
+  @media (max-width:480px){body{font-size:17px} .wrap{padding:12px} header{padding:20px 16px} section.card{padding:16px} h1{font-size:26px} h2{font-size:19px}}
+  @media (prefers-color-scheme:dark){
+    body{background:#000;color:#f2f2f7}
+    header,section.card,a.card,.filter,.note{background:#1c1c1e;box-shadow:none;border:1px solid #2c2c2e}
+    .meta,a.card span,footer,.none{color:#9ca3af}
+    .home a{background:#1c1c1e;border-color:#2a4a73;color:#9cc3ff}
+    .filter select,.filter input{background:#12233f;border-color:#2a4a73;color:#f2f2f7}
+    .date{background:#14331f;color:#a7f3c8}
+    .why{color:#b0b3b8}
+    a{color:#7fb3ff}
+    section.card a{background:#12233f;border-color:#2a4a73;color:#9cc3ff}
+    a.card strong{color:#9cc3ff}
+  }</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="home"><a href="../../index.html">&larr; Back to home</a></p>
+    <header>
+    <h1>Company News — Valuation &amp; Future Prospects</h1>
+    <p class="meta">Last updated: Saturday, November 28, 2026, 7:00 AM ET &middot; News list: 17 companies &middot; Window: November 21&ndash;November 28, 2026</p>
+  </header>
+  <div class="note">
+    <strong>Filter:</strong> Only news that could materially affect a company's valuation or future prospects is included — earnings/guidance, major orders, regulation, litigation, leadership, M&amp;A, capex, pricing, and moat developments. Routine price moves, lone analyst rating changes, and unverified rumors are excluded. SEC filings are covered separately in the daily feed and are not used as a news source here. This is information only, not a recommendation, and no trades are placed.
+  </div>
+  <div class="filter">
+  <label for="companyFilter">Choose a company</label>
+  <select id="companyFilter" aria-label="Choose a company">
+    <option value="all">All companies</option>
+    <option value="upcoming">Upcoming in the next week</option>
+    <option value="AAPL">AAPL — Apple</option>
+    <option value="AMZN">AMZN — Amazon</option>
+    <option value="ASML">ASML — ASML Holding</option>
+    <option value="AWK">AWK — American Water Works</option>
+    <option value="BR">BR — Broadridge</option>
+    <option value="BRK-A">BRK-A — Berkshire Hathaway</option>
+    <option value="FCX">FCX — Freeport-McMoRan</option>
+    <option value="FISV">FISV — Fiserv</option>
+    <option value="FNMA">FNMA — Fannie Mae</option>
+    <option value="GEV">GEV — GE Vernova</option>
+    <option value="GOOGL">GOOGL — Alphabet</option>
+    <option value="ITOCY">ITOCY — Itochu ADR</option>
+    <option value="JNJ">JNJ — Johnson & Johnson</option>
+    <option value="MP">MP — MP Materials</option>
+    <option value="NFLX">NFLX — Netflix</option>
+    <option value="UNP">UNP — Union Pacific</option>
+    <option value="WMT">WMT — Walmart</option>
+  </select>
+  <label for="companySearch">Search</label>
+  <input id="companySearch" type="search" placeholder="Search news, e.g. earnings, merger, pricing" aria-label="Search news" />
+</div>
+<section class="card" data-company="upcoming">
+    <h2>Upcoming in the next week</h2>
+    <ul><li><span class="date">Tue, Dec 1, 2026</span> — Surface Transportation Board replies due on the completeness of the responsive applications in the Union Pacific&ndash;Norfolk Southern merger review (Docket FD 36873); DOJ/DOT comments due Dec 3. <a href="https://www.stb.gov/resources/major-railroad-mergers/">STB</a></li><li><span class="date">Tue, Dec 8, 2026</span> — Broadridge hosts its Investor Day in New York (8:30 AM ET); CEO Tim Gokey and CFO Ashima Ghei present strategy, growth outlook and new three-year growth objectives, with a live webcast on Broadridge&rsquo;s investor relations site. <a href="https://www.quantisnow.com/insight/broadridge-to-host-investor-day-on-december-8-2026-6805075">Quantisnow (Broadridge)</a></li>
+  
+    
+  </ul>
+  </section>
+  <section class="card" data-company="AAPL">
+    <h2>AAPL — Apple</h2>
+    <ul><li><span class="date">2026-11-23</span> — Thirty-two states and the District of Columbia filed a friend-of-the-court brief at the U.S. Supreme Court urging the justices to reject Apple&rsquo;s bid to overturn a 2025 contempt order over its App Store, arguing a ruling for Apple &ldquo;would be a windfall for competition-law violators&rdquo;; the justices hear the appeal on Jan 11, 2027. <span class="why">Why it matters: the states&rsquo; backing strengthens Epic&rsquo;s position in the App Store antitrust fight that governs Apple&rsquo;s services economics, though the contempt order itself does not change the App Store rules already in force.</span> <a href="https://www.reuters.com/legal/government/us-states-back-fortnite-maker-epic-games-as-apple-asks-supreme-court-overturn-2026-11-23/">Reuters</a></li><li><span class="date">2026-11-26</span> — Apple held the top spot in China&rsquo;s smartphone market during the Singles&rsquo; Day shopping festival despite an 8% year-over-year sales decline, while the overall market fell 17% across the promotional period (weeks 42&ndash;46, Oct 12&ndash;Nov 13); six of the top 10 bestsellers were iPhone 17 and 18 models, led by the iPhone 18 Pro Max, and Huawei was the only major brand to grow, up 29% — Counterpoint Research attributes the weak festival to buyers postponing upgrades rather than accepting higher prices. <span class="why">Why it matters: a demand read on Apple&rsquo;s most closely watched market — Apple outpaced a sharply weaker category, but the 8% decline and price-driven upgrade delays cut against the iPhone 18 launch strength seen earlier in the autumn.</span> <a href="https://www.macrumors.com/2026/11/26/iphones-dominate-china-singles-day-sales/">MacRumors (Counterpoint)</a></li><li><span class="date">2026-11-27</span> — OpenAI countersued Apple in Northern California federal court, accusing it of stealing trade secrets and blocking its access to hardware suppliers through &ldquo;unlawful, tortious, and unfair business practices&rdquo; — alleging a rehired former employee sent more than 100 confidential OpenAI hardware files to personal accounts and that Apple pressured shared vendors not to work with OpenAI; Apple called the counterclaims &ldquo;a transparent attempt to distract&rdquo; from its own July lawsuit, in which OpenAI has already been ordered to stop using Apple&rsquo;s confidential information. <span class="why">Why it matters: the trade-secrets fight is now two-way and reaches into the AI-device race — OpenAI&rsquo;s first hardware device, reportedly due in 2027, would compete directly with the iPhone maker, though every claim on both sides remains an allegation and trial is set for July 19, 2027.</span> <a href="https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/">Reuters</a></li>
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="AMZN">
+    <h2>AMZN — Amazon</h2>
+    <ul><li><span class="date">2026-11-23</span> — Amazon announced it will acquire the technology behind Israeli AI startup Decart&rsquo;s Optimization Stack and bring its three co-founders and AI researchers and engineers into Amazon; Amazon did not disclose terms, while Bloomberg reported the deal at about $7.5 billion, and completion is subject to regulatory clearance. <span class="why">Why it matters: a roughly $7.5 billion bet on making AI models run faster on less hardware across chip types, including Amazon&rsquo;s Trainium — but the price is unconfirmed, Decart&rsquo;s Lucy and Oasis models are not part of the deal, and clearance is still needed.</span> <a href="https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/">Reuters</a></li><li><span class="date">2026-11-24</span> — Arianespace&rsquo;s Ariane 6 launched 36 Amazon Leo satellites (mission LE-04) from French Guiana, bringing the constellation to 432 satellites in orbit (136 launched by Arianespace), nine days after a United Launch Alliance Vulcan failure destroyed 40 Leo satellites on Nov 15; Amazon plans to begin service to select customers before the end of 2026, toward a first-generation constellation of 3,232 satellites. <span class="why">Why it matters: concrete progress on the satellite-broadband business after a launch setback, though the constellation is still far from Starlink&rsquo;s scale and commercial service has not yet begun.</span> <a href="https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/">Spaceflight Now</a></li><li><span class="date">2026-11-25</span> — Research firm SemiAnalysis reported that Amazon&rsquo;s Trainium3 UltraServer delivered up to 2.28 times better performance per dollar than Nvidia&rsquo;s GB300 NVL72 on its AgentX agentic-inference benchmark — Amazon&rsquo;s first Trainium3 submission — with the edge coming mostly from modeled ownership cost ($1.05 per chip-hour vs $2.31 for the GB300) rather than raw throughput, where the lead was about 4% at the highlighted operating point; SemiAnalysis separately found Nvidia&rsquo;s newer Vera Rubin rack beats the GB300 by 2&ndash;6.5 times on the same measure. <span class="why">Why it matters: the first independent benchmark showing AWS&rsquo;s custom silicon is cost-competitive in AI inference — a margin and positioning story for AWS — though the figure is a preview maximum on modeled costs against last-generation Blackwell hardware, not a full head-to-head.</span> <a href="https://www.tikr.com/blog/plot-twist-nvidias-vera-rubin-gets-2-6-5x-gb300s-tokens-per-dollar-amazons-trainium-edge-was-against-the-old-chip">TIKR (SemiAnalysis)</a></li>
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ASML">
+    <h2>ASML — ASML Holding</h2>
+    <ul><li><span class="date">2026-11-26</span> — Dutch Trade Minister Sjoerd Sjoerdsma told parliament on Thursday that the U.S. MATCH Act goes &ldquo;way too far&rdquo; and would put Europe at an unacceptable disadvantage, saying the Netherlands is lobbying hard against the bill together with the European Commission, Germany and France to keep it out of the annual defence policy bill, and that if it is adopted the Netherlands will tell the U.S. administration not to enforce it; the bill would force allies including the Netherlands and Japan to align DUV export controls with U.S. levels or face unilateral U.S. restrictions on equipment including ASML&rsquo;s immersion DUV tools. <span class="why">Why it matters: ministerial-level Dutch opposition, now coordinated across the EU, is the strongest defense yet of ASML&rsquo;s China business — about 20% of this year&rsquo;s sales — though the bill could still advance in the defense bill.</span> <a href="https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/">Reuters</a></li><li><span class="date">2026-11-25</span> — ASML chief executive Christophe Fouquet warned on Semafor&rsquo;s Future Proof programme that cutting China off completely from chip tools would backfire, saying export controls are needed to protect very advanced technology but should not be so strict that they push China to escalate its own development — countries should not &ldquo;completely frustrate a country and invite that country to basically double down or triple down on development&rdquo;; ASML has held an extremely high market share in China for almost 30 years. <span class="why">Why it matters: the ASML chief is now publicly making the case against a total ban as Congress debates attaching the MATCH Act to the defence bill — China is about 20% of ASML&rsquo;s sales, and a total ban would hit DUV tool sales and servicing while accelerating Chinese domestic rivals.</span> <a href="https://casrai.org/news/netherlands-urges-us-not-to-enforce-match-act-asml-chip-tool-controls-2026">CASRAI (Semafor, Nov 25)</a></li><li><span class="date">2026-11-27</span> — Dutch Prime Minister Rob Jetten said he will discuss the U.S. MATCH Act with President Donald Trump at the G20 summit in Miami on December 14&ndash;15, saying it is in both countries&rsquo; interests to find &ldquo;a sensible way forward&rdquo;; the Netherlands opposes the bill on sovereignty grounds, arguing that restricting ASML&rsquo;s access to its global market would only spur innovation in China, and Jetten said the recent Nvidia affair &ldquo;has triggered a shift in sentiment in the US Congress&rdquo;. <span class="why">Why it matters: the dispute over ASML&rsquo;s China business — about 20% of this year&rsquo;s sales — has now reached the prime-minister-to-president level, the strongest diplomatic defence yet, though the bill could still advance in the defence bill.</span> <a href="https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/">Reuters</a></li>
+  
+  
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="AWK">
+    <h2>AWK — American Water Works</h2>
+    <ul>
+  <li><span class="date">2026-11-24</span> — The Illinois Commerce Commission approved a $74 million rate increase for Illinois American Water, 41% below the $127 million the company sought (originally $142.4 million), and set the allowed return on equity at 9.67%, down from the 10.75% requested and below the 9.84% the utility currently earns; the company had cited $577 million of infrastructure investment over two years. <span class="why">Why it matters: for a regulated water utility the allowed return on equity sets the earnings power — Illinois regulators cut both the revenue increase and the return below the current level, a negative read-through for American Water&rsquo;s Illinois earnings and for how other state commissions may treat its rate cases.</span> <a href="https://www.nprillinois.org/illinois/2026-11-24/icc-approves-74-million-rate-hike-for-illinois-american-water-co-customers">NPR Illinois</a></li>
+  </ul>
+  </section>
+  <section class="card" data-company="BR">
+    <h2>BR — Broadridge</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="BRK-A">
+    <h2>BRK-A — Berkshire Hathaway</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FCX">
+    <h2>FCX — Freeport-McMoRan</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FISV">
+    <h2>FISV — Fiserv</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="FNMA">
+    <h2>FNMA — Fannie Mae</h2>
+    <ul><li><span class="date">2026-11-24</span> — The Federal Housing Finance Agency approved FICO 10T for Fannie Mae and Freddie Mac and published a timeline mirroring the VantageScore 4.0 rollout: pilot lenders are to begin delivering FICO 10T-scored loans in December 2027, a limited rollout follows in April 2028, and broad availability with retirement of Classic FICO is targeted for September 2028. <span class="why">Why it matters: sets an end date for Classic FICO in GSE mortgages — the scoring framework that underpins Fannie&rsquo;s underwriting — though dates after November 2026 are targets and subject to change.</span> <a href="https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation">FHFA</a></li><li><span class="date">2026-11-24</span> — The Federal Housing Finance Agency set the 2027 conforming loan limit for mortgages Fannie Mae and Freddie Mac can acquire at $855,400 for one-unit properties in most of the U.S., up $22,650 (+2.72%) from 2026, with the high-cost-area ceiling at $1,283,100, after average U.S. home prices rose 2.72% in the year to the third quarter of 2026. <span class="why">Why it matters: modestly expands the conforming loans Fannie can buy, though it is the routine annual statutory adjustment.</span> <a href="https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027">FHFA</a></li></ul>
+  </section>
+  <section class="card" data-company="GEV">
+    <h2>GEV — GE Vernova</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="GOOGL">
+    <h2>GOOGL — Alphabet</h2>
+    <ul><li><span class="date">2026-11-24</span> — Waymo recalled nearly 4,500 robotaxis in the U.S. after 11 incidents since October 1 in which vehicles entered closed highway lanes in roadwork zones, including three on November 9, despite previous software modifications; the recall follows a National Highway Traffic Safety Administration probe opened Nov 9 into school-bus safety violations. <span class="why">Why it matters: a safety setback that adds uncertainty to Waymo&rsquo;s rollout and path to profitability, though the direct financial impact on Alphabet is likely limited.</span> <a href="https://tradersunion.com/news/stocks/show/4399243-google-faces-renewed-selling-pressure/">TradersUnion (Reuters)</a></li>
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="ITOCY">
+    <h2>ITOCY — Itochu ADR</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="JNJ">
+    <h2>JNJ — Johnson & Johnson</h2>
+    <p class="none">No important valuation-relevant news found in the window.</p>
+  </section>
+  <section class="card" data-company="MP">
+    <h2>MP — MP Materials</h2>
+    <ul><li><span class="date">2026-11-24</span> — China&rsquo;s Commerce Ministry said it will extend the suspension of tightened dual-use export controls on gallium, germanium, antimony and superhard materials to the U.S. from Nov 28, 2026 to Jan 27, 2027; the suspension was due to expire Nov 27, and the separate suspension of rare-earth export controls still runs to Jan 10, 2027, while the ban on exports for U.S. military end use stays in force. <span class="why">Why it matters: prolongs the fragile U.S.&ndash;China critical-minerals truce that underpins MP&rsquo;s demand backdrop, though it covers gallium, germanium and antimony rather than rare earths and is a temporary pause, not a withdrawal.</span> <a href="https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/">Reuters</a></li>
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="NFLX">
+    <h2>NFLX — Netflix</h2>
+    <ul><li><span class="date">2026-11-24</span> — Netflix closed its $380 million acquisition of the 55-acre Radford Studio Center in Studio City — the historic lot where Seinfeld was filmed — after a Goldman Sachs-led lender group took the property back at a foreclosure auction in Pomona with a $380 million credit bid and no competing bids; with the city&rsquo;s 5.5% transfer tax the total is about $400 million, against the $1.85 billion previous owner Hackman Capital Partners paid in 2021 before defaulting on its $1.1 billion mortgage in January 2026. <span class="why">Why it matters: Netflix&rsquo;s first studio lot in Los Angeles, bought at about 20% of the 2021 price, consolidating production capacity, though $380 million is small next to Netflix.</span> <a href="https://www.thewrap.com/industry-news/business/netflix-radford-studio-lot-380-million-acquistion/">TheWrap</a></li><li><span class="date">2026-11-24</span> — Netflix submitted the largest opening bid for the U.S. media rights to the 2030 FIFA Men&rsquo;s World Cup, topping offers from Amazon&rsquo;s Prime Video and a joint Fox Sports&ndash;Univision bid, and FIFA has opened a second round of bidding to drive up the price; FIFA is seeking $1.5&ndash;2.0 billion for the combined English- and Spanish-language rights, against $1.085 billion combined for the 2026 tournament, with a decision expected in December. <span class="why">Why it matters: winning would put Netflix at the centre of the biggest live-sports property in the U.S. and accelerate the shift of premium live rights from broadcast to streaming — but it has not won yet, the price could rise further in round two, and no bid figures are public.</span> <a href="https://awfulannouncing.com/netflix/submits-highest-opening-offer-2030-fifa-world-cup.html">Awful Announcing (The Guardian)</a></li>
+  
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="UNP">
+    <h2>UNP — Union Pacific</h2>
+    <ul><li><span class="date">2026-11-24</span> — The Stop the Rail Merger Coalition said 57 additional parties formally opposed the Union Pacific&ndash;Norfolk Southern merger in last week&rsquo;s Surface Transportation Board comment round — including Marathon Petroleum, Cleveland-Cliffs, J.B. Hunt, Olin, the American Farm Bureau Federation, the National Corn Growers Association and the Alabama Port Authority — bringing the total to 97 parties explicitly seeking rejection and 142 seeking conditions, with 28 state attorneys general now opposed; the two other U.S. Class I railroads, CSX and BNSF, and CPKC also oppose the deal. <span class="why">Why it matters: the broadest organised opposition yet raises the risk the merger is denied or approved only with costly conditions, though the STB has not ruled; replies are due Feb 16, 2027 and a decision is expected by Aug 2027.</span> <a href="https://www.wcia.com/business/press-releases/cision/20261124PH05043/americas-biggest-manufacturers-farmers-railroads-and-labor-unions-unite-against-up-ns-merger/">WCIA (PRNewswire)</a></li>
+  
+  
+  
+  </ul>
+  </section>
+  <section class="card" data-company="WMT">
+    <h2>WMT — Walmart</h2>
+    <ul><li><span class="date">2026-11-25</span> — Flipkart announced group CEO Kalyan Krishnamurthy is concluding his tenure after more than eleven years with the company; his last day is December 4, chief product and technology officer Balaji Thiagarajan and the board will lead in the interim, and a successor will be named in the coming weeks — no reason for the departure was given, and reports link it to differences with Walmart over the IPO timeline. <span class="why">Why it matters: a leadership change at Walmart&rsquo;s largest international e-commerce asset just as its long-delayed IPO is in question — the exit removes the executive who steered Flipkart since Walmart&rsquo;s 2018 acquisition and leaves the listing&rsquo;s timing and terms to a successor.</span> <a href="https://corporate.walmart.com/news/2026/11/kalyan-krishnamurthy-to-leave-flipkart">Walmart</a></li><li><span class="date">2026-11-25</span> — Walmart-backed PhonePe revived its IPO plans and is targeting a listing in the first three months of 2027 at a $12&ndash;15 billion valuation, with updated draft papers to be filed with India&rsquo;s SEBI within 30&ndash;45 days and a pure offer for sale of $1.2&ndash;1.5 billion; majority owner Walmart would trim its stake by about 12% while Tiger Global and Microsoft plan to exit fully. <span class="why">Why it matters: a $12&ndash;15 billion listing would crystallise value in Walmart&rsquo;s Indian fintech holding — PhonePe processed nearly 11.4 billion UPI transactions in October — and a partial Walmart exit returns cash, though the valuation and timing still rest on unnamed sources and the updated filing.</span> <a href="https://www.thehindubusinessline.com/markets/phonepe-revives-ipo-plans-targets-12-15-billion-valuation-in-early-2027/article71742261.ece">The Hindu BusinessLine (Reuters)</a></li>
+  
+  
+  
+  
+  </ul>
+  </section>
+  <footer>
+    Source window: November 21&ndash;November 28, 2026. This file is replaced in full every run of the daily feed.
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var select = document.getElementById("companyFilter");
+    var search = document.getElementById("companySearch");
+    var cards = document.querySelectorAll("section.card");
+    function apply() {
+      var value = select.value;
+      var q = (search.value || "").toLowerCase();
+      cards.forEach(function (card) {
+        var byCompany = (value === "all" || card.getAttribute("data-company") === value);
+        var bySearch = (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = (byCompany && bySearch) ? "" : "none";
+      });
+    }
+    select.addEventListener("change", apply);
+    search.addEventListener("input", apply);
+  })();
+</script>
+</body>
+</html>
